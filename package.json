@@ -6,7 +6,7 @@
   "homepage": "https://MaouSanta.github.io/kuroi_shion",
   "type": "module",
   "scripts": {
-    "build": "remix build --static",
+    "build": "remix build",
     "dev": "remix dev --manual",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/index.js",
