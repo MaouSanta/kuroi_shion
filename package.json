@@ -12,7 +12,7 @@
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -14,7 +14,7 @@ export default function Index() {
 
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing="lg" mb="xl">
         {/* 博客文章链接示例 */}
-        <Card shadow="sm" padding="lg" radius="md" withBorder>
+        {/* <Card shadow="sm" padding="lg" radius="md" withBorder>
           <Title order={3} mb="sm">最新文章：构建 Remix 静态博客</Title>
           <Text size="sm" color="dimmed" mb="md">
             这篇文章将详细记录我如何使用 Remix 和 Mantine 搭建这个博客的整个过程。
@@ -22,7 +22,7 @@ export default function Index() {
           <Button component={Link} to="/blog/build-remix-blog" variant="light" fullWidth radius="md">
             阅读文章
           </Button>
-        </Card>
+        </Card> */}
 
         {/* 词典页面链接示例 */}
         <Card shadow="sm" padding="lg" radius="md" withBorder>
