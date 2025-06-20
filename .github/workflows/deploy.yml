@@ -1,0 +1,51 @@
+# .github/workflows/deploy.yml
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # 当有新的提交推送到 'main' 分支时触发
+  workflow_dispatch: # 允许手动触发部署
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 在 Ubuntu 虚拟机上运行构建和部署
+    permissions:
+      contents: read # 允许读取仓库内容
+      pages: write # 允许写入 GitHub Pages
+      id-token: write # 允许 OIDC 身份验证
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # 检查代码
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # 使用 Node.js 20 LTS
+
+      - name: Install dependencies
+        run: npm install # 安装项目依赖
+
+      - name: Build Next.js project
+        run: npm run build # 执行 Next.js 构建，生成 'out' 目录
+
+      # ⚠️ 配置 GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # 设置您网站的 URL 前缀。
+          # 如果您的仓库名为 kuroi_shion 且 URL 为 https://kuroi_shion.github.io/kuroi_shion/
+          # 则这里填写 /kuroi_shion
+          # 如果您的仓库名为 kuroi_shion.github.io 且 URL 为 https://kuroi_shion.github.io/
+          # 则这里留空或删除此行
+          base_url: /kuroi_shion # <-- ！！！请根据您的实际仓库名修改！！！
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out # 上传 'out' 目录作为 Pages Artifact
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4 # 部署 Artifact 到 GitHub Pages
