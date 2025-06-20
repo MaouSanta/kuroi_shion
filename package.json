@@ -2,7 +2,7 @@
   "name": "kuroi_shion",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://maousanta.github.io/kuroi_shion",
+  "homepage": "https://MaouSanta.github.io/kuroi_shion",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
