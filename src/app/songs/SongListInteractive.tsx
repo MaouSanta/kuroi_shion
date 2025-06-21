@@ -4,9 +4,9 @@
 import { Song } from '@/types/song';
 import { Tag } from '@/types/tag';
 import {
-    ActionIcon, Anchor, Badge, Box, Checkbox, Flex, Group, Pagination,
+    ActionIcon, Badge, Box, Checkbox, Flex, Group, Pagination,
     ScrollArea, SegmentedControl, Table, Text, TextInput, Tooltip,
-    Title, Select
+    Title,
 } from '@mantine/core';
 import {
     IconLink, IconSearch, IconSortAscending, IconSortDescending, IconX
@@ -247,7 +247,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                     leftSection={<IconSearch size={16} />}
                     value={searchTerm}
                     onChange={(event) => setSearchTerm(event.currentTarget.value)}
-                    // --- 关键改动：TextInput 的 rightSectionProps ---
                     rightSection={
                         searchTerm && (
                             <ActionIcon onClick={() => setSearchTerm('')} variant="subtle" color="gray">
@@ -255,28 +254,12 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                             </ActionIcon>
                         )
                     }
-                    // 让 rightSection 绝对定位，不影响输入框宽度
-                    rightSectionProps={{
-                        style: {
-                            position: 'absolute',
-                            right: 'var(--mantine-spacing-sm)', // Mantine 默认的 padding-right
-                            top: '50%',
-                            transform: 'translateY(-50%)',
-                            zIndex: 1, // 确保在输入框之上
-                        },
-                    }}
-                    // 给输入框本身留出足够的右侧空间，防止文本被X号遮挡
-                    styles={{
-                        input: {
-                            paddingRight: 'calc(var(--mantine-spacing-xl) + 24px)', // 默认padding + IconX宽度 + 额外间距
-                        },
-                    }}
-                    style={{ flexGrow: 1, minWidth: '200px', position: 'relative' }} // TextInput 容器需要相对定位
+                    style={{ flexGrow: 1, minWidth: '200px' }}
                 />
 
-                <Box style={{ flexGrow: 1, minWidth: '180px', display: 'flex', flexDirection: 'column' }}> {/* 添加 flex 布局 */}
-                    <Text size="sm" fw={500} mb="xs" style={{ alignSelf: 'flex-start' }}>検索範囲</Text> {/* 文本顶部对齐 */}
-                    <Group gap="sm" style={{ marginTop: 'auto' }}> {/* Group 底部对齐 */}
+                <Box style={{ flexGrow: 1, minWidth: '180px' }}>
+                    <Text size="sm" fw={500} mb="xs">検索範囲</Text>
+                    <Group gap="sm">
                         <Checkbox
                             label="曲名"
                             checked={searchScopes.songName}
@@ -296,16 +279,14 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 </Box>
 
                 {statusTags.length > 0 && (
-                    // --- 关键改动：歌唱状况 Box 的布局 ---
-                    <Box style={{ minWidth: '150px', display: 'flex', flexDirection: 'column' }}> {/* 添加 flex 布局 */}
-                        <Text size="sm" fw={500} mb="xs" style={{ alignSelf: 'flex-start' }}>歌唱状況</Text> {/* 文本顶部对齐 */}
+                    <Box style={{ minWidth: '150px' }}>
+                        <Text size="sm" fw={500} mb="xs">歌唱状況</Text>
                         <SegmentedControl
                             data={statusTags}
                             value={selectedStatusTag}
                             onChange={setSelectedStatusTag}
                             fullWidth
                             color="violet"
-                            style={{ marginTop: 'auto' }} {/* SegmentedControl 底部对齐 */}
                         />
                     </Box>
                 )}
