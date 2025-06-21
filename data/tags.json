@@ -1,0 +1,28 @@
+[
+    {
+        "name": "清唱",
+        "color": "teal"
+    },
+    {
+        "name": "非全曲",
+        "color": "orange"
+    },
+    {
+        "name": "点歌",
+        "color": "grape"
+    },
+    {
+        "name": "合唱",
+        "color": "indigo"
+    },
+    {
+        "name": "已演唱",
+        "color": "green",
+        "isStatusTag": true
+    },
+    {
+        "name": "未演唱",
+        "color": "red",
+        "isStatusTag": true
+    }
+]
