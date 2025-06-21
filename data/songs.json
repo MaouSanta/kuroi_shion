@@ -1,6 +1,234 @@
 [
     {
-        "id": "25",
+        "songName": "メルト",
+        "artist": "ryo(supercell) feat. 初音ミク",
+        "lyrics": "朝 目がさめて 真っ先に思い浮かぶ 君のこと 思い切って",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-12-11",
+                "youtubeLink": "https://www.youtube.com/watch?v=IZ0M3JiPIVs&t=288s"
+            }
+        ]
+    },
+    {
+        "songName": "鬼ノ宴",
+        "artist": "友成空",
+        "lyrics": "何処から喰へば良いものか 美味いものか不味いものか さっぱり俺にゃ分からない 決まりばかりの世の中じゃ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=4351s"
+            }
+        ]
+    },
+    {
+        "songName": "ただ君に晴れ",
+        "artist": "ヨルシカ",
+        "lyrics": "夜に浮かんでいた 海月のような月が爆ぜた バス停の背を覗けば あの夏の君が頭にいる",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=3954s"
+            }
+        ]
+    },
+    {
+        "songName": "寝起きヤシの木",
+        "artist": "Yukopi feat. 歌愛ユキ",
+        "lyrics": "寝起きヤシの木 どうすべき 時間もないし どうすんの これ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=3716s"
+            }
+        ]
+    },
+    {
+        "songName": "モエチャッカファイア",
+        "artist": "弌誠",
+        "lyrics": "ようこそお越しなさったご主人様 隣に座ってせーの 萌萌萌萌 こんなんで誰が喜ぶのさ ねぇ教えて",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=3304s"
+            }
+        ]
+    },
+    {
+        "songName": "ひとりごつ",
+        "artist": "ハチワレ(田中誠人)",
+        "lyrics": "なんだ～もう 朝…かと…ひとり‥ごつ… 焼けたパンにバタァ ぬり…ぬり… やんだ～雨はなんか‥しめって…",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2109s"
+            }
+        ]
+    },
+    {
+        "songName": "テルーの唄",
+        "artist": "手嶌葵",
+        "lyrics": "夕闇迫る雲の上 いつも一羽で飛んでいる 鷹はきっと悲しかろう 音も途絶えた風の中 空を掴んだその翼",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1074s"
+            }
+        ]
+    },
+    {
+        "songName": "風といっしょに",
+        "artist": "小林幸子",
+        "lyrics": "歩きつづけて どこまで ゆくの? 風に たずねられて",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=274s"
+            }
+        ]
+    },
+    {
+        "songName": "Shangri-La",
+        "artist": "石田燿子",
+        "lyrics": "木漏れ日が今そっと 君の瞳を彩った まるで万華鏡 その瞬間僕は 心が躍った",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=3984s"
+            }
+        ]
+    },
+    {
+        "songName": "心絵",
+        "artist": "ロードオブメジャー",
+        "lyrics": "描いた夢と ここにある今 ２つの景色 見比べても 形をかえて",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=3391s"
+            }
+        ]
+    },
+    {
+        "songName": "KING",
+        "artist": "Kanaria feat. GUMI",
+        "lyrics": "幽閉 利口 逝く前に ユーヘイじゃ利口に難儀ダーリン",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=3066s"
+            }
+        ]
+    },
+    {
+        "songName": "千本桜",
+        "artist": "黒うさP feat. 初音ミク",
+        "lyrics": "大胆不敵にハイカラ革命 磊々落々反戦国家 日の丸印の二輪車転がし 悪霊退散",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=2400s"
+            }
+        ]
+    },
+    {
+        "songName": "灯火のまにまに",
+        "artist": "東山奈央",
+        "lyrics": "そっと心の奥 光宿した 灯火のまにまに 立ち込める八重霞",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=1935s"
+            }
+        ]
+    },
+    {
+        "songName": "夏祭り",
+        "artist": "Whiteberry",
+        "lyrics": "君がいた夏は 遠い夢の中 空に消えてった 打ち上げ花火 君の髪の香りはじけた",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=1303s"
+            }
+        ]
+    },
+    {
+        "songName": "夏色",
+        "artist": "ゆず",
+        "lyrics": "駐車場のネコは アクビをしながら 今日も一日を過ごしてゆく 何も変わらない おだやかな街並",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=907s"
+            }
+        ]
+    },
+    {
+        "songName": "メランコリック",
+        "artist": "Junky feat. 鏡音リン",
+        "lyrics": "全然つかめない君の事 全然知らない内に 心奪われるなんて事 あるはずないでしょ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=652s"
+            },
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2835s"
+            }
+        ]
+    },
+    {
+        "id": "26",
         "songName": "YUME日和",
         "artist": "島谷ひとみ",
         "lyrics": "黄金のシンバル鳴らすように 囁くのは お日様 「一緒においで 木々の宴に」",
@@ -11,11 +239,15 @@
             {
                 "date": "2024-06-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=7xRIHJAD4fg&t=4207s"
+            },
+            {
+                "data": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=4498s"
             }
         ]
     },
     {
-        "id": "24",
+        "id": "25",
         "songName": "きっと大丈夫",
         "artist": "Little Glee Monster",
         "lyrics": "ありがとう ありがとう 君の笑顔が 僕を支えてくれていたんだ どうか涙は隠さないでいて",
@@ -30,7 +262,7 @@
         ]
     },
     {
-        "id": "23",
+        "id": "24",
         "songName": "ダダダダ天使",
         "artist": "ナナヲアカリ",
         "lyrics": "やんないじゃない、 できないんだ！ (ドヤ！) あー近頃巷で噂のダメ天使",
@@ -45,7 +277,7 @@
         ]
     },
     {
-        "id": "22",
+        "id": "23",
         "songName": "春よ、来い",
         "artist": "松任谷由実",
         "lyrics": "淡き光立つ 俄雨 いとし面影の沈丁花 溢るる涙の蕾から ひとつ",
@@ -60,7 +292,7 @@
         ]
     },
     {
-        "id": "21",
+        "id": "22",
         "songName": "銀の龍の背に乗って",
         "artist": "中島みゆき",
         "lyrics": "あの蒼ざめた海の彼方で 今まさに誰かが傷んでいる まだ飛べない雛たちみたいに 僕は この非力を嘆いている",
@@ -75,7 +307,7 @@
         ]
     },
     {
-        "id": "20",
+        "id": "21",
         "songName": "Get Wild",
         "artist": "TMN",
         "lyrics": "アスファルト タイヤを 切りつけながら 暗闇走りぬける チープな",
@@ -90,7 +322,7 @@
         ]
     },
     {
-        "id": "19",
+        "id": "20",
         "songName": "小さきもの",
         "artist": "林明日香",
         "lyrics": "静かにただ 見つめてた 小さきもの 眠る顔 眉間にしわ",
@@ -101,6 +333,25 @@
             {
                 "date": "2024-05-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=2618s"
+            },
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1324s"
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "songName": "蕾",
+        "artist": "コブクロ",
+        "lyrics": "涙こぼしても 汗にまみれた笑顔の中じゃ 誰も気付いてはくれない だから あなたの涙を僕は知らない",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2024-05-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=2260s"
             }
         ]
     },
@@ -120,6 +371,10 @@
             {
                 "date": "2024-06-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=7xRIHJAD4fg&t=2309s"
+            },
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=665s"
             }
         ]
     },
@@ -135,6 +390,10 @@
             {
                 "date": "2024-05-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=1809s"
+            },
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2412s"
             }
         ]
     },
@@ -382,6 +641,10 @@
             {
                 "date": "2024-04-11",
                 "youtubeLink": "https://www.youtube.com/watch?v=x-tf7xnJ1hc&t=265s"
+            },
+            {
+                "date": "2024-09-21",
+                "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=156s"
             }
         ]
     },

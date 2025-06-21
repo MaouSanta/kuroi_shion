@@ -67,7 +67,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 {parts.map((part, i) => (
                     <Fragment key={i}>
                         {part.toLowerCase() === highlight.toLowerCase() ? (
-                            <Text span c="orange" style={{ textShadow: '0 0 0.5px orange' }}>{part}</Text>
+                            <Text span c="orange">{part}</Text>
                         ) : (
                             part
                         )}
@@ -119,13 +119,15 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                     ? b.latestPerformanceTime - a.latestPerformanceTime
                     : a.latestPerformanceTime - b.latestPerformanceTime;
             } else if (sortState.key === 'songName') {
+                // --- 关键：使用 'ja' locale 进行日文排序 ---
                 comparison = sortState.direction === 'asc'
-                    ? a.songName.localeCompare(b.songName)
-                    : b.songName.localeCompare(a.songName);
+                    ? a.songName.localeCompare(b.songName, 'ja') // 指定日文 locale
+                    : b.songName.localeCompare(a.songName, 'ja'); // 指定日文 locale
             } else if (sortState.key === 'artist') {
+                // --- 关键：使用 'ja' locale 进行日文排序 ---
                 comparison = sortState.direction === 'asc'
-                    ? a.artist.localeCompare(b.artist)
-                    : b.artist.localeCompare(a.artist);
+                    ? a.artist.localeCompare(b.artist, 'ja') // 指定日文 locale
+                    : b.artist.localeCompare(a.artist, 'ja'); // 指定日文 locale
             } else if (sortState.key === 'performanceCount') {
                 comparison = sortState.direction === 'desc'
                     ? b.performanceCount - a.performanceCount
@@ -172,7 +174,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                         size="sm"
                         style={{ cursor: 'pointer' }}
                     >
-                        {dayjs(perf.date).format('MM-DD')}
+                        {dayjs(perf.date).format('YY-MM-DD')}
                     </Badge>
                 </Tooltip>
             ));
@@ -191,14 +193,14 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         return (
             <Table.Tr key={song.id}>
                 <Table.Td>
-                    <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    <Text lineClamp={2}> {/* 限制最多显示2行，超出部分显示省略号 */}
                         {highlightText(song.songName, searchScopes.songName ? searchTerm : '')}
-                    </Box>
+                    </Text>
                 </Table.Td>
                 <Table.Td>
-                    <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    <Text lineClamp={2}>
                         {highlightText(song.artist, searchScopes.artist ? searchTerm : '')}
-                    </Box>
+                    </Text>
                 </Table.Td>
                 <Table.Td>
                     <Group gap="xs" wrap="wrap">
@@ -311,14 +313,14 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                                     アーティスト {renderSortIcon('artist')}
                                 </Group>
                             </Table.Th>
-                            <Table.Th style={{ width: '20%' }}>
+                            <Table.Th style={{ width: '24%' }}>
                                 <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('date')}>
-                                    歌唱記録 {renderSortIcon('date')}
+                                    該当配信 {renderSortIcon('date')}
                                 </Group>
                             </Table.Th>
-                            <Table.Th style={{ width: '10%' }}>
+                            <Table.Th style={{ width: '6%' }}>
                                 <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('performanceCount')}>
-                                    歌唱回数 {renderSortIcon('performanceCount')}
+                                    回数 {renderSortIcon('performanceCount')}
                                 </Group>
                             </Table.Th>
                             <Table.Th style={{ width: '20%' }}>歌詞</Table.Th>
