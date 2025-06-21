@@ -4,24 +4,32 @@
         "color": "teal"
     },
     {
-        "name": "非全曲",
+        "name": "自信ない",
+        "color": "purple"
+    },
+    {
+        "name": "スピード早い",
+        "color": "yellow"
+    },
+    {
+        "name": "高音が多い",
         "color": "orange"
     },
     {
-        "name": "点歌",
+        "name": "曲知らない",
         "color": "grape"
     },
     {
-        "name": "合唱",
+        "name": "歌詞知らない",
         "color": "indigo"
     },
     {
-        "name": "已演唱",
+        "name": "歌唱済み",
         "color": "green",
         "isStatusTag": true
     },
     {
-        "name": "未演唱",
+        "name": "未歌唱",
         "color": "red",
         "isStatusTag": true
     }

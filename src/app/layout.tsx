@@ -1,62 +1,62 @@
 // src/app/layout.tsx
-import React from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import './globals.css';
 import '@mantine/core/styles.css';
-import '@mantine/dates/styles.css'; // 如果使用了日期选择器，需要引入样式
-import { createTheme } from '@mantine/core';
+import '@mantine/dates/styles.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+
+// 导入你的字体设置，确保 Noto Sans JP 被正确加载
+// 如果你已经移除了 @next/font/google，并且在 <head> 中直接引入了 <link>，
+// 那么这里就不用再导入字体文件了。
 
 export const metadata: Metadata = {
-  title: '我的 Next.js 博客',
-  description: '一个使用 Next.js 和 Mantine 构建的个人博客',
+  title: '黒井獅音 歌リスト記録',
+  description: '獅音さんが配信で歌った曲を記録中、随時更新されます...',
 };
 
-const theme = createTheme({
-  fontFamily: 'Noto Sans JP, sans-serif', // 如果需要日文字体
-  primaryColor: 'violet', // 更改主色调，Mantine 会自动生成一系列深浅颜色
-  // colors: {
-  //   // 自定义颜色
-  //   'deep-purple': ['#ede9fb', /* ...其他深浅 */ '#4a148c'],
-  // },
-  // primaryColor: 'deep-purple',
-  spacing: { xs: '8px', sm: '12px', md: '16px', lg: '24px', xl: '32px' },
-  // ... 更多主题定制选项
-});
-
-export default function RootLayout({ children }: { children: React.ReactNode; }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="zh-CN" suppressHydrationWarning>
+    <html lang="ja">
       <head>
-        <ColorSchemeScript defaultColorScheme="auto" />
+        <ColorSchemeScript />
+        {/* 确保 Noto Sans JP 字体在这里被正确引入 */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={inter.className}>
-        <MantineProvider theme={theme} defaultColorScheme="auto">
-          {children}
+      {/* 应用字体类，如果之前没有直接在 body 应用，这里可以添加一个 CSS 变量 */}
+      <body style={{ margin: 0, padding: 0 }}>
+        <MantineProvider>
+          {/* 使用 Flexbox 布局，min-h-screen 让 body 至少和视口一样高 */}
+          {/* flex-col 让子元素垂直排列 */}
+          {/* flex-grow 让 main 内容区域填充可用空间 */}
+          <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+            {/* Header (你可以根据实际情况替换为你的 Header 组件) */}
+            {/* <header style={{ padding: '1rem', borderBottom: '1px solid #eee', background: '#fff' }}>
+              {/* 你可以在这里放置你的全局导航或品牌信息 */}
+            {/* <h1 style={{ margin: 0, fontSize: '1.5rem', textAlign: 'center' }}>黒井獅音 歌単</h1>
+            </header> */}
+
+            {/* Main content area, will grow to fill available space */}
+            <main style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', padding: '1rem' }}>
+              {children}
+            </main>
+
+            {/* Footer (你可以根据实际情况替换为你的 Footer 组件) */}
+            <footer style={{ padding: '1rem', borderTop: '1px solid #eee', textAlign: 'center', background: '#fff' }}>
+              <p style={{ margin: 0, fontSize: '0.8rem', color: '#666' }}>© 2024 Kuroi Shion Song Set List. All rights reserved.</p>
+            </footer>
+          </div>
         </MantineProvider>
       </body>
     </html>
   );
 }
-
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     // 在 <html> 标签上添加 suppressHydrationWarning
-//     <html lang="zh-CN" suppressHydrationWarning>
-//       <head>
-//         <ColorSchemeScript defaultColorScheme="auto" /> {/* 可以使用 auto，因为 warning 被 suppress 了 */}
-//       </head>
-//       <body className={inter.className}>
-//         <MantineProvider defaultColorScheme="auto">
-//           {children}
-//         </MantineProvider>
-//       </body>
-//     </html>
-//   );
-// }

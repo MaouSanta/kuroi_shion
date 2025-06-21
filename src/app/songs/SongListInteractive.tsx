@@ -5,7 +5,8 @@ import { Song } from '@/types/song';
 import { Tag } from '@/types/tag';
 import {
     ActionIcon, Anchor, Badge, Box, Checkbox, Flex, Group, Pagination,
-    ScrollArea, SegmentedControl, Table, Text, TextInput, Tooltip
+    ScrollArea, SegmentedControl, Table, Text, TextInput, Tooltip,
+    Title, Select
 } from '@mantine/core';
 import {
     IconLink, IconSearch, IconSortAscending, IconSortDescending, IconX
@@ -14,77 +15,48 @@ import dayjs from 'dayjs';
 import { Fragment, useMemo, useState } from 'react';
 import Link from 'next/link';
 
-// 移除不使用的 dayjs 插件，保持代码精简
-// import isBetween from 'dayjs/plugin/isBetween';
-// import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
-// import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
-// dayjs.extend(isBetween);
-// dayjs.extend(isSameOrAfter);
-// dayjs.extend(isSameOrBefore);
-
-
 interface SongListInteractiveProps {
     clientSongs: Song[];
     allAvailableTags: Tag[];
 }
 
-type SortKey = 'date' | 'songName' | 'artist';
+type SortKey = 'date' | 'songName' | 'artist' | 'performanceCount';
 type SortState = {
     key: SortKey | null;
     direction: 'asc' | 'desc';
 };
 
 export function SongListInteractive({ clientSongs, allAvailableTags }: SongListInteractiveProps) {
-    // --- 状态管理 ---
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedStatusTag, setSelectedStatusTag] = useState('所有');
+    const [selectedStatusTag, setSelectedStatusTag] = useState('すべて');
     const [sortState, setSortState] = useState<SortState>({ key: 'date', direction: 'desc' });
 
     const [searchScopes, setSearchScopes] = useState({
         songName: true,
         artist: true,
-        lyrics: false
+        lyrics: true
     });
 
-    // --- 分页状态 ---
     const [activePage, setActivePage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState<string>('10');
 
-    // --- 数据处理（Memoized 计算）---
-
-    // `songDates` 已不再用于日历标记或日期筛选，可以安全移除以简化代码
-    // const songDates = useMemo(() => {
-    //   const dates = new Set<string>();
-    //   clientSongs.forEach(song => {
-    //     song.performances.forEach(perf => dates.add(dayjs(perf.date).format('YYYY-MM-DD')));
-    //   });
-    //   return dates;
-    // }, [clientSongs]);
-
-    // 分离出状态标签，确保'所有'标签的正确性
     const statusTags = useMemo(() => {
-        // 过滤出所有 `isStatusTag` 为 true 的标签，并从中映射出名称
         const filteredTags = allAvailableTags
             .filter(tag => tag.isStatusTag)
             .map(tag => tag.name);
-        // 返回包含 '所有' 和过滤后的标签名称的数组
-        return ['所有', ...filteredTags];
+        return ['すべて', ...filteredTags];
     }, [allAvailableTags]);
 
-
-    // 处理排序点击事件
     const handleSort = (key: SortKey) => {
         setSortState(prev => {
             if (prev.key === key) {
                 return { key, direction: prev.direction === 'asc' ? 'desc' : 'asc' };
             } else {
-                // 如果是不同的键，默认降序排序（符合最新的需求：默认按时间倒序）
                 return { key, direction: 'desc' };
             }
         });
     };
 
-    // 搜索关键词高亮函数
     const highlightText = (text: string | undefined, highlight: string) => {
         if (!text || !highlight.trim()) {
             return <>{text}</>;
@@ -95,7 +67,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 {parts.map((part, i) => (
                     <Fragment key={i}>
                         {part.toLowerCase() === highlight.toLowerCase() ? (
-                            // 仅改颜色和 subtle text shadow，避免字体粗细影响布局
                             <Text span c="orange" style={{ textShadow: '0 0 0.5px orange' }}>{part}</Text>
                         ) : (
                             part
@@ -106,9 +77,18 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         );
     };
 
-    // 过滤并排序歌曲
+    const processedSongs = useMemo(() => {
+        return clientSongs.map(song => ({
+            ...song,
+            performanceCount: song.performances.length,
+            latestPerformanceTime: song.performances.length > 0
+                ? Math.max(...song.performances.map(p => new Date(p.date).getTime()))
+                : 0,
+        }));
+    }, [clientSongs]);
+
     const filteredAndSortedSongs = useMemo(() => {
-        let filtered = clientSongs;
+        let filtered = processedSongs;
 
         if (searchTerm) {
             const lowerCaseSearchTerm = searchTerm.toLowerCase();
@@ -127,36 +107,47 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
             });
         }
 
-        if (selectedStatusTag !== '所有') {
+        if (selectedStatusTag !== 'すべて') {
             filtered = filtered.filter(song => song.notes.includes(selectedStatusTag));
         }
 
         const sorted = [...filtered].sort((a, b) => {
+            let comparison = 0;
+
             if (sortState.key === 'date') {
-                const latestDateA = a.performances.reduce((maxDate, perf) => Math.max(maxDate, new Date(perf.date).getTime()), 0);
-                const latestDateB = b.performances.reduce((maxDate, perf) => Math.max(maxDate, new Date(perf.date).getTime()), 0);
-                return sortState.direction === 'desc' ? latestDateB - latestDateA : latestDateA - latestDateB;
+                comparison = sortState.direction === 'desc'
+                    ? b.latestPerformanceTime - a.latestPerformanceTime
+                    : a.latestPerformanceTime - b.latestPerformanceTime;
             } else if (sortState.key === 'songName') {
-                return sortState.direction === 'asc'
+                comparison = sortState.direction === 'asc'
                     ? a.songName.localeCompare(b.songName)
                     : b.songName.localeCompare(a.songName);
             } else if (sortState.key === 'artist') {
-                return sortState.direction === 'asc'
+                comparison = sortState.direction === 'asc'
                     ? a.artist.localeCompare(b.artist)
                     : b.artist.localeCompare(a.artist);
+            } else if (sortState.key === 'performanceCount') {
+                comparison = sortState.direction === 'desc'
+                    ? b.performanceCount - a.performanceCount
+                    : a.performanceCount - b.performanceCount;
             }
-            return 0; // 默认不排序
+
+            if (comparison === 0) {
+                return sortState.direction === 'desc'
+                    ? b.latestPerformanceTime - a.latestPerformanceTime
+                    : a.latestPerformanceTime - b.latestPerformanceTime;
+            }
+            return comparison;
         });
 
-        setActivePage(1); // 当过滤或排序条件改变时，重置页码到第一页
+        setActivePage(1);
 
         return sorted;
-    }, [clientSongs, searchTerm, selectedStatusTag, sortState, searchScopes]);
+    }, [processedSongs, searchTerm, selectedStatusTag, sortState, searchScopes]);
 
-    // --- 分页逻辑 ---
-    const totalPages = Math.ceil(filteredAndSortedSongs.length / parseInt(itemsPerPage === '所有' ? filteredAndSortedSongs.length.toString() : itemsPerPage));
+    const totalPages = Math.ceil(filteredAndSortedSongs.length / parseInt(itemsPerPage === 'すべて' ? filteredAndSortedSongs.length.toString() : itemsPerPage));
     const paginatedSongs = useMemo(() => {
-        if (itemsPerPage === '所有') {
+        if (itemsPerPage === 'すべて') {
             return filteredAndSortedSongs;
         }
         const startIndex = (activePage - 1) * parseInt(itemsPerPage);
@@ -164,31 +155,31 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         return filteredAndSortedSongs.slice(startIndex, endIndex);
     }, [activePage, itemsPerPage, filteredAndSortedSongs]);
 
-
-    // --- 表格行渲染 ---
     const rows = paginatedSongs.map((song) => {
-        // 渲染表演记录的 Badge 列表
         const performanceBadges = song.performances
-            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()) // 内部按日期倒序
+            .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
             .map((perf, index) => (
                 <Tooltip key={index} label={dayjs(perf.date).format('YYYY年MM月DD日')} withArrow>
-                    <Anchor component={Link} href={perf.youtubeLink} target="_blank" rel="noopener noreferrer" title="跳转到 YouTube 视频">
-                        <Badge
-                            variant="filled"
-                            color="red" // YouTube 红色
-                            leftSection={<IconLink size={12} />} // 小链接图标
-                            size="sm"
-                        >
-                            {dayjs(perf.date).format('MM-DD')} {/* 只显示月-日 */}
-                        </Badge>
-                    </Anchor>
+                    <Badge
+                        component={Link}
+                        href={perf.youtubeLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="YouTube動画へ"
+                        variant="filled"
+                        color="red"
+                        leftSection={<IconLink size={12} />}
+                        size="sm"
+                        style={{ cursor: 'pointer' }}
+                    >
+                        {dayjs(perf.date).format('MM-DD')}
+                    </Badge>
                 </Tooltip>
             ));
 
-        // 获取当前歌曲的 notes 中对应的 Tag 颜色
         const songNoteBadges = song.notes.map((note, index) => {
             const tagInfo = allAvailableTags.find(tag => tag.name === note);
-            const badgeColor = tagInfo ? tagInfo.color : 'gray'; // 默认颜色为 gray
+            const badgeColor = tagInfo ? tagInfo.color : 'gray';
 
             return (
                 <Badge key={index} variant="filled" color={badgeColor} size="sm">
@@ -200,7 +191,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         return (
             <Table.Tr key={song.id}>
                 <Table.Td>
-                    {/* 歌名不再需要单独的 youtube 链接，直接展示歌名 */}
                     <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         {highlightText(song.songName, searchScopes.songName ? searchTerm : '')}
                     </Box>
@@ -211,13 +201,14 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                     </Box>
                 </Table.Td>
                 <Table.Td>
-                    <Group gap="xs" wrap="wrap"> {/* 包裹，允许换行 */}
+                    <Group gap="xs" wrap="wrap">
                         {performanceBadges}
                     </Group>
                 </Table.Td>
+                <Table.Td>{song.performanceCount}</Table.Td>
                 <Table.Td>
                     <Text size="sm" c="dimmed" style={{ maxHeight: '60px', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
-                        {highlightText(song.lyrics, searchScopes.lyrics ? searchTerm : '')}
+                        {highlightText(song.lyrics || '歌詞なし', searchScopes.lyrics ? searchTerm : '')}
                     </Text>
                 </Table.Td>
                 <Table.Td>
@@ -229,24 +220,34 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         );
     });
 
-    // 渲染表头中的排序图标
     const renderSortIcon = (key: SortKey) => {
         if (sortState.key === key) {
             return sortState.direction === 'asc' ? <IconSortAscending size={16} /> : <IconSortDescending size={16} />;
         }
         return null;
     };
-
     return (
-        <Box>
-            {/* --- 筛选和排序区域 --- */}
+        <Box style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+            {/* 标题和副标题区域保持不变 */}
+            <Flex justify="space-between" align="flex-start" mb="lg" wrap="wrap">
+                <Box style={{ flexGrow: 1, minWidth: '300px' }}>
+                    <Title ta="left" order={1} mb="md">
+                        黒井獅音 歌枠セットリスト記録
+                    </Title>
+                    <Text ta="left" size="lg" mb="xl" c="dimmed">
+                        獅音くんが歌枠配信で歌った曲を記録中、随時更新されます...（2024/05/10まで半分収録完了）
+                    </Text>
+                </Box>
+            </Flex>
+
+            {/* 搜索和筛选区域保持不变 */}
             <Flex gap="md" wrap="wrap" mb="lg" align="flex-end" justify="space-between">
-                {/* 搜索歌名或歌手 */}
                 <TextInput
-                    placeholder="输入关键词搜索"
+                    placeholder="キーワードを入力して検索"
                     leftSection={<IconSearch size={16} />}
                     value={searchTerm}
                     onChange={(event) => setSearchTerm(event.currentTarget.value)}
+                    // --- 关键改动：TextInput 的 rightSectionProps ---
                     rightSection={
                         searchTerm && (
                             <ActionIcon onClick={() => setSearchTerm('')} variant="subtle" color="gray">
@@ -254,110 +255,138 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                             </ActionIcon>
                         )
                     }
-                    style={{ flexGrow: 1, minWidth: '200px' }}
+                    // 让 rightSection 绝对定位，不影响输入框宽度
+                    rightSectionProps={{
+                        style: {
+                            position: 'absolute',
+                            right: 'var(--mantine-spacing-sm)', // Mantine 默认的 padding-right
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            zIndex: 1, // 确保在输入框之上
+                        },
+                    }}
+                    // 给输入框本身留出足够的右侧空间，防止文本被X号遮挡
+                    styles={{
+                        input: {
+                            paddingRight: 'calc(var(--mantine-spacing-xl) + 24px)', // 默认padding + IconX宽度 + 额外间距
+                        },
+                    }}
+                    style={{ flexGrow: 1, minWidth: '200px', position: 'relative' }} // TextInput 容器需要相对定位
                 />
 
-                {/* 搜索范围复选框 */}
-                <Box style={{ flexGrow: 1, minWidth: '180px' }}>
-                    <Text size="sm" fw={500} mb="xs">搜索范围</Text>
-                    <Group gap="sm">
+                <Box style={{ flexGrow: 1, minWidth: '180px', display: 'flex', flexDirection: 'column' }}> {/* 添加 flex 布局 */}
+                    <Text size="sm" fw={500} mb="xs" style={{ alignSelf: 'flex-start' }}>検索範囲</Text> {/* 文本顶部对齐 */}
+                    <Group gap="sm" style={{ marginTop: 'auto' }}> {/* Group 底部对齐 */}
                         <Checkbox
-                            label="歌名"
+                            label="曲名"
                             checked={searchScopes.songName}
                             onChange={({ currentTarget }) => setSearchScopes(prev => ({ ...prev, songName: currentTarget.checked }))}
                         />
                         <Checkbox
-                            label="歌手"
+                            label="アーティスト"
                             checked={searchScopes.artist}
                             onChange={({ currentTarget }) => setSearchScopes(prev => ({ ...prev, artist: currentTarget.checked }))}
                         />
                         <Checkbox
-                            label="歌词"
+                            label="歌詞"
                             checked={searchScopes.lyrics}
                             onChange={({ currentTarget }) => setSearchScopes(prev => ({ ...prev, lyrics: currentTarget.checked }))}
                         />
                     </Group>
                 </Box>
 
-
-                {/* 状态标签筛选 SegmentedControl */}
                 {statusTags.length > 0 && (
-                    <Box style={{ minWidth: '150px' }}>
-                        <Text size="sm" fw={500} mb="xs">演唱状态</Text>
+                    // --- 关键改动：歌唱状况 Box 的布局 ---
+                    <Box style={{ minWidth: '150px', display: 'flex', flexDirection: 'column' }}> {/* 添加 flex 布局 */}
+                        <Text size="sm" fw={500} mb="xs" style={{ alignSelf: 'flex-start' }}>歌唱状況</Text> {/* 文本顶部对齐 */}
                         <SegmentedControl
-                            data={statusTags} // 直接使用处理好的 statusTags 数组
+                            data={statusTags}
                             value={selectedStatusTag}
                             onChange={setSelectedStatusTag}
                             fullWidth
                             color="violet"
+                            style={{ marginTop: 'auto' }} {/* SegmentedControl 底部对齐 */}
                         />
                     </Box>
                 )}
             </Flex>
 
-            {/* --- 表格显示区域 --- */}
-            {filteredAndSortedSongs.length > 0 ? (
-                <>
-                    <ScrollArea h={400} type="always">
-                        <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed' }}>
-                            <Table.Thead>
-                                <Table.Tr>
-                                    <Table.Th style={{ width: '25%' }}>
-                                        <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('songName')}>
-                                            歌名 {renderSortIcon('songName')}
-                                        </Group>
-                                    </Table.Th>
-                                    <Table.Th style={{ width: '20%' }}>
-                                        <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('artist')}>
-                                            歌手 {renderSortIcon('artist')}
-                                        </Group>
-                                    </Table.Th>
-                                    <Table.Th style={{ width: '20%' }}>
-                                        <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('date')}>
-                                            表演记录 {renderSortIcon('date')}
-                                        </Group>
-                                    </Table.Th>
-                                    <Table.Th style={{ width: '20%' }}>歌词</Table.Th>
-                                    <Table.Th style={{ width: '15%' }}>备注</Table.Th>
-                                </Table.Tr>
-                            </Table.Thead>
-                            <Table.Tbody>{rows}</Table.Tbody>
-                        </Table>
-                    </ScrollArea>
+            {/* --- 关键修改：始终显示表格，但条件渲染 tbody 和分页/统计 --- */}
+            <ScrollArea
+                h="auto"
+                type="always"
+                style={{ flexGrow: 1 }}
+            >
+                <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed' }}>
+                    <Table.Thead>
+                        <Table.Tr>
+                            <Table.Th style={{ width: '20%' }}>
+                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('songName')}>
+                                    曲名 {renderSortIcon('songName')}
+                                </Group>
+                            </Table.Th>
+                            <Table.Th style={{ width: '15%' }}>
+                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('artist')}>
+                                    アーティスト {renderSortIcon('artist')}
+                                </Group>
+                            </Table.Th>
+                            <Table.Th style={{ width: '20%' }}>
+                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('date')}>
+                                    歌唱記録 {renderSortIcon('date')}
+                                </Group>
+                            </Table.Th>
+                            <Table.Th style={{ width: '10%' }}>
+                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('performanceCount')}>
+                                    歌唱回数 {renderSortIcon('performanceCount')}
+                                </Group>
+                            </Table.Th>
+                            <Table.Th style={{ width: '20%' }}>歌詞</Table.Th>
+                            <Table.Th style={{ width: '15%' }}>備考</Table.Th>
+                        </Table.Tr>
+                    </Table.Thead>
 
-                    {/* --- 分页和每页数量选择 --- */}
-                    <Flex justify="space-between" align="center" mt="md" wrap="wrap">
-                        {/* 统计信息，紧贴表格底部 */}
-                        <Text size="sm" c="dimmed">
-                            显示 {filteredAndSortedSongs.length} 条记录
-                        </Text>
+                    {/* 只在有数据时渲染 Table.Tbody */}
+                    {filteredAndSortedSongs.length > 0 && (
+                        <Table.Tbody>{rows}</Table.Tbody>
+                    )}
+                </Table>
 
-                        <Group gap="sm">
-                            <SegmentedControl
-                                data={['10', '20', '50', '所有']}
-                                value={itemsPerPage}
-                                onChange={(value) => {
-                                    setItemsPerPage(value);
-                                    setActivePage(1);
-                                }}
-                                size="sm"
+                {/* 如果没有找到歌曲，在表格下方显示提示 */}
+                {filteredAndSortedSongs.length === 0 && (
+                    <Text ta="center" c="dimmed" py="xl" style={{ borderTop: '1px solid var(--mantine-color-gray-2)' }}>
+                        条件に合う曲は見つかりませんでした。
+                    </Text>
+                )}
+            </ScrollArea>
+
+            {/* 只有在有歌曲时才显示分页和记录计数 */}
+            {filteredAndSortedSongs.length > 0 && (
+                <Flex justify="space-between" align="center" mt="md" wrap="wrap">
+                    <Text size="sm" c="dimmed">
+                        {filteredAndSortedSongs.length}件のレコードを表示中
+                    </Text>
+
+                    <Group gap="sm">
+                        <SegmentedControl
+                            data={['10', '20', '50', 'すべて']}
+                            value={itemsPerPage}
+                            onChange={(value) => {
+                                setItemsPerPage(value);
+                                setActivePage(1);
+                            }}
+                            size="sm"
+                        />
+                        {itemsPerPage !== 'すべて' && (
+                            <Pagination
+                                total={totalPages}
+                                value={activePage}
+                                onChange={setActivePage}
+                                siblings={1}
+                                boundaries={1}
                             />
-                            {itemsPerPage !== '所有' && (
-                                <Pagination
-                                    total={totalPages}
-                                    value={activePage}
-                                    onChange={setActivePage}
-                                    siblings={1}
-                                    boundaries={1}
-                                />
-                            )}
-                        </Group>
-                    </Flex>
-                </>
-            ) : (
-                <Text ta="center" c="dimmed" py="xl">
-                    没有找到符合条件的歌曲。
-                </Text>
+                        )}
+                    </Group>
+                </Flex>
             )}
         </Box>
     );
