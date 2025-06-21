@@ -1,52 +1,49 @@
 // src/app/songs/SongListInteractive.tsx
 'use client';
 
-import { Song, Performance } from '@/types/song';
+import { Song } from '@/types/song';
 import { Tag } from '@/types/tag';
 import {
-    Table, TextInput, Badge, Group, Box, Flex, ScrollArea, SegmentedControl,
-    ActionIcon, Anchor, Pagination, Text, Tooltip, Checkbox // 导入 Checkbox
+    ActionIcon, Anchor, Badge, Box, Checkbox, Flex, Group, Pagination,
+    ScrollArea, SegmentedControl, Table, Text, TextInput, Tooltip
 } from '@mantine/core';
 import {
-    IconSearch, IconX, IconLink,
-    IconSortAscending, IconSortDescending, // Table Header 排序图标
+    IconLink, IconSearch, IconSortAscending, IconSortDescending, IconX
 } from '@tabler/icons-react';
-import { useState, useMemo, Fragment } from 'react'; // 导入 Fragment 用于高亮
 import dayjs from 'dayjs';
-
-// 导入 dayjs 插件
-import isBetween from 'dayjs/plugin/isBetween';
-import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
-import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
-dayjs.extend(isBetween);
-dayjs.extend(isSameOrAfter);
-dayjs.extend(isSameOrBefore);
-
+import { Fragment, useMemo, useState } from 'react';
 import Link from 'next/link';
+
+// 移除不使用的 dayjs 插件，保持代码精简
+// import isBetween from 'dayjs/plugin/isBetween';
+// import isSameOrAfter from 'dayjs/plugin/isSameOrAfter';
+// import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
+// dayjs.extend(isBetween);
+// dayjs.extend(isSameOrAfter);
+// dayjs.extend(isSameOrBefore);
+
 
 interface SongListInteractiveProps {
     clientSongs: Song[];
     allAvailableTags: Tag[];
 }
 
-// 定义排序状态的类型
 type SortKey = 'date' | 'songName' | 'artist';
 type SortState = {
-    key: SortKey | null; // 当前排序的键
-    direction: 'asc' | 'desc'; // 排序方向
+    key: SortKey | null;
+    direction: 'asc' | 'desc';
 };
 
 export function SongListInteractive({ clientSongs, allAvailableTags }: SongListInteractiveProps) {
     // --- 状态管理 ---
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedStatusTag, setSelectedStatusTag] = useState('所有');
-    const [sortState, setSortState] = useState<SortState>({ key: 'date', direction: 'desc' }); // 默认按时间倒序
+    const [sortState, setSortState] = useState<SortState>({ key: 'date', direction: 'desc' });
 
-    // 搜索范围复选框状态
     const [searchScopes, setSearchScopes] = useState({
-        songName: true, // 默认在歌名中搜索
-        artist: true,   // 默认在歌手中搜索
-        lyrics: false   // 默认不在歌词中搜索
+        songName: true,
+        artist: true,
+        lyrics: false
     });
 
     // --- 分页状态 ---
@@ -55,34 +52,41 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
 
     // --- 数据处理（Memoized 计算）---
 
-    // 提取所有存在歌曲的日期，用于日历标记
-    const songDates = useMemo(() => {
-        const dates = new Set<string>();
-        clientSongs.forEach(song => {
-            song.performances.forEach(perf => dates.add(dayjs(perf.date).format('YYYY-MM-DD')));
-        });
-        return dates;
-    }, [clientSongs]);
+    // `songDates` 已不再用于日历标记或日期筛选，可以安全移除以简化代码
+    // const songDates = useMemo(() => {
+    //   const dates = new Set<string>();
+    //   clientSongs.forEach(song => {
+    //     song.performances.forEach(perf => dates.add(dayjs(perf.date).format('YYYY-MM-DD')));
+    //   });
+    //   return dates;
+    // }, [clientSongs]);
 
-    // 分离出状态标签
-    const statusTags = useMemo(() => allAvailableTags.filter(tag => tag.name === '所有' || tag.isStatusTag), [allAvailableTags]); // 确保 '所有' 选项存在
+    // 分离出状态标签，确保'所有'标签的正确性
+    const statusTags = useMemo(() => {
+        // 过滤出所有 `isStatusTag` 为 true 的标签，并从中映射出名称
+        const filteredTags = allAvailableTags
+            .filter(tag => tag.isStatusTag)
+            .map(tag => tag.name);
+        // 返回包含 '所有' 和过滤后的标签名称的数组
+        return ['所有', ...filteredTags];
+    }, [allAvailableTags]);
+
 
     // 处理排序点击事件
     const handleSort = (key: SortKey) => {
         setSortState(prev => {
             if (prev.key === key) {
-                // 如果是同一个键，切换排序方向
                 return { key, direction: prev.direction === 'asc' ? 'desc' : 'asc' };
             } else {
-                // 如果是不同的键，默认为倒序
+                // 如果是不同的键，默认降序排序（符合最新的需求：默认按时间倒序）
                 return { key, direction: 'desc' };
             }
         });
     };
 
     // 搜索关键词高亮函数
-    const highlightText = (text: string, highlight: string) => {
-        if (!text || !highlight.trim()) { // 增加对 text 为 null/undefined 的处理
+    const highlightText = (text: string | undefined, highlight: string) => {
+        if (!text || !highlight.trim()) {
             return <>{text}</>;
         }
         const parts = text.split(new RegExp(`(${highlight})`, 'gi'));
@@ -106,7 +110,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
     const filteredAndSortedSongs = useMemo(() => {
         let filtered = clientSongs;
 
-        // 搜索词过滤
         if (searchTerm) {
             const lowerCaseSearchTerm = searchTerm.toLowerCase();
             filtered = filtered.filter(song => {
@@ -124,12 +127,10 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
             });
         }
 
-        // 状态标签过滤
         if (selectedStatusTag !== '所有') {
             filtered = filtered.filter(song => song.notes.includes(selectedStatusTag));
         }
 
-        // 排序
         const sorted = [...filtered].sort((a, b) => {
             if (sortState.key === 'date') {
                 const latestDateA = a.performances.reduce((maxDate, perf) => Math.max(maxDate, new Date(perf.date).getTime()), 0);
@@ -147,11 +148,10 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
             return 0; // 默认不排序
         });
 
-        // 当过滤或排序条件改变时，重置页码到第一页
-        setActivePage(1);
+        setActivePage(1); // 当过滤或排序条件改变时，重置页码到第一页
 
         return sorted;
-    }, [clientSongs, searchTerm, selectedStatusTag, sortState, searchScopes]); // 依赖项更新
+    }, [clientSongs, searchTerm, selectedStatusTag, sortState, searchScopes]);
 
     // --- 分页逻辑 ---
     const totalPages = Math.ceil(filteredAndSortedSongs.length / parseInt(itemsPerPage === '所有' ? filteredAndSortedSongs.length.toString() : itemsPerPage));
@@ -200,16 +200,14 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         return (
             <Table.Tr key={song.id}>
                 <Table.Td>
-                    {/* 使用 Box 代替 Group 来包裹歌名和图标，避免布局问题 */}
-                    <Box style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0, minWidth: 0 }}>
-                        <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {highlightText(song.songName, searchScopes.songName ? searchTerm : '')} {/* 高亮歌名 */}
-                        </Box>
+                    {/* 歌名不再需要单独的 youtube 链接，直接展示歌名 */}
+                    <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        {highlightText(song.songName, searchScopes.songName ? searchTerm : '')}
                     </Box>
                 </Table.Td>
                 <Table.Td>
                     <Box style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                        {highlightText(song.artist, searchScopes.artist ? searchTerm : '')} {/* 高亮歌手 */}
+                        {highlightText(song.artist, searchScopes.artist ? searchTerm : '')}
                     </Box>
                 </Table.Td>
                 <Table.Td>
@@ -219,7 +217,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 </Table.Td>
                 <Table.Td>
                     <Text size="sm" c="dimmed" style={{ maxHeight: '60px', overflow: 'hidden', textOverflow: 'ellipsis', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
-                        {highlightText(song.lyrics || '暂无歌词', searchScopes.lyrics ? searchTerm : '')} {/* 高亮歌词 */}
+                        {highlightText(song.lyrics, searchScopes.lyrics ? searchTerm : '')}
                     </Text>
                 </Table.Td>
                 <Table.Td>
@@ -245,7 +243,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
             <Flex gap="md" wrap="wrap" mb="lg" align="flex-end" justify="space-between">
                 {/* 搜索歌名或歌手 */}
                 <TextInput
-                    placeholder="输入关键词搜索" // 更新提示文本
+                    placeholder="输入关键词搜索"
                     leftSection={<IconSearch size={16} />}
                     value={searchTerm}
                     onChange={(event) => setSearchTerm(event.currentTarget.value)}
@@ -287,7 +285,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                     <Box style={{ minWidth: '150px' }}>
                         <Text size="sm" fw={500} mb="xs">演唱状态</Text>
                         <SegmentedControl
-                            data={['所有', ...statusTags.filter(t => t.name !== '所有').map(tag => tag.name)]} // 过滤掉allAvailableTags中的'所有'
+                            data={statusTags} // 直接使用处理好的 statusTags 数组
                             value={selectedStatusTag}
                             onChange={setSelectedStatusTag}
                             fullWidth
