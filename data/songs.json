@@ -14,6 +14,7 @@
         ]
     },
     {
+        "id": "64",
         "songName": "鬼ノ宴",
         "artist": "友成空",
         "lyrics": "何処から喰へば良いものか 美味いものか不味いものか さっぱり俺にゃ分からない 決まりばかりの世の中じゃ",
@@ -28,6 +29,23 @@
         ]
     },
     {
+        "id": "63",
+        "songName": "花に亡霊",
+        "artist": "ヨルシカ",
+        "lyrics": "もう忘れてしまったかな 夏の木陰に座ったまま 氷菓を口に放り込んで風を待っていた",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=4237s"
+            }
+        ]
+    },
+    {
+        "id": "62",
         "songName": "ただ君に晴れ",
         "artist": "ヨルシカ",
         "lyrics": "夜に浮かんでいた 海月のような月が爆ぜた バス停の背を覗けば あの夏の君が頭にいる",
@@ -42,6 +60,7 @@
         ]
     },
     {
+        "id": "61",
         "songName": "寝起きヤシの木",
         "artist": "Yukopi feat. 歌愛ユキ",
         "lyrics": "寝起きヤシの木 どうすべき 時間もないし どうすんの これ",
@@ -56,6 +75,7 @@
         ]
     },
     {
+        "id": "60",
         "songName": "モエチャッカファイア",
         "artist": "弌誠",
         "lyrics": "ようこそお越しなさったご主人様 隣に座ってせーの 萌萌萌萌 こんなんで誰が喜ぶのさ ねぇ教えて",
@@ -70,6 +90,87 @@
         ]
     },
     {
+        "id": "59",
+        "songName": "嗚呼、素晴らしきニャン生",
+        "artist": "Nem feat. GUMI,鏡音レン",
+        "lyrics": "これは可愛いお嬢さん真っ白な毛がとても素敵ねこんな月が綺麗な夜は僕と一緒に遊びませんか ニャン生は一度きり楽しむが勝ちなのですあなたを縛る首輪は噛み千切って",
+        "notes": [
+            "未歌唱",
+            "アカペラ"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2790s"
+            }
+        ]
+    },
+    {
+        "id": "58",
+        "songName": "決意の朝に",
+        "artist": "Aqua Timez",
+        "lyrics": "どうせならもう ヘタクソな夢を描いていこうよ どうせならもう ヘタクソで明るく愉快な愛のある夢を",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2613s"
+            }
+        ]
+    },
+    {
+        "id": "57",
+        "songName": "VOYAGER ～日付のない墓標～",
+        "artist": "松任谷由実",
+        "lyrics": "傷ついた友達さえ 置き去りにできるソルジャー あなたの苦しさを私だけに つたえていってほしい",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2468s"
+            }
+        ]
+    },
+    {
+        "id": "56",
+        "songName": "やわらか戦車",
+        "artist": "",
+        "lyrics": "",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2110s"
+            }
+        ]
+    },
+    {
+        "id": "55",
+        "songName": "雫",
+        "artist": "スキマスイッチ",
+        "lyrics": "背中にあった翼は君と共に無くした飛べた頃の記憶は擦り傷の様には消えてくれない 月が丘を行く 夜光虫を引き連れて手付かずの一日が何も言わずに終わっていく",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2060s"
+            }
+        ]
+    },
+    {
+        "id": "54",
         "songName": "ひとりごつ",
         "artist": "ハチワレ(田中誠人)",
         "lyrics": "なんだ～もう 朝…かと…ひとり‥ごつ… 焼けたパンにバタァ ぬり…ぬり… やんだ～雨はなんか‥しめって…",
@@ -84,6 +185,202 @@
         ]
     },
     {
+        "id": "53",
+        "songName": "奏（かなで）",
+        "artist": "スキマスイッチ",
+        "lyrics": "改札の前つなぐ手と手 いつものざわめき 新しい風 明るく見送るはずだったのに",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=2013s"
+            }
+        ]
+    },
+    {
+        "id": "52",
+        "songName": "渡月橋〜君想ふ〜",
+        "artist": "倉木麻衣",
+        "lyrics": "寄り添う二人に 君がオーバーラップ 色なき風に 思い馳せて 触れた手の温もり 今も Stop 時間を止めて",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1533s"
+            }
+        ]
+    },
+    {
+        "id": "51",
+        "songName": "そこに空があるから",
+        "artist": "江崎とし子",
+        "lyrics": "振り向いてごらん 君のつけた道が顔上げてごらん 未来を創るよ 頑張ることに 疲れたときには空を見上げて 涙を流そう 頬なでる風が きっと言うから",
+        "notes": [
+            "未歌唱",
+            "音源ない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1533s"
+            }
+        ]
+    },
+    {
+        "id": "50",
+        "songName": "相思相愛",
+        "artist": "aiko",
+        "lyrics": "あたしはあなたにはなれない なれない ずっと遠くから見てる 見てるだけで",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1490s"
+            }
+        ]
+    },
+    {
+        "id": "49",
+        "songName": "リグレットメッセージ",
+        "artist": "mothy(悪ノP) feat. 鏡音リン",
+        "lyrics": "街はずれの小さな港 一人たたずむ少女 この海に昔からある ひそかな言い伝え",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1444s"
+            }
+        ]
+    },
+    {
+        "id": "48",
+        "songName": "月光花",
+        "artist": "Janne Da Arc",
+        "lyrics": "悲しげに咲く花に 君の面影を見た 大好きな雨なのに 何故か今日は冷たくて",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1208s"
+            }
+        ]
+    },
+    {
+        "id": "47",
+        "songName": "雪の華",
+        "artist": "中島美嘉",
+        "lyrics": "のびた人陰を 舗道に並べ 夕闇のなかをキミと歩いてる 手を繋いでいつまでも ずっと",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=940s"
+            },
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1900s"
+            }
+        ]
+    },
+    {
+        "id": "46",
+        "songName": "ORION",
+        "artist": "中島美嘉",
+        "lyrics": "泣いたのは僕だった 弱さを見せないことが そう 強い訳じゃないって君が 言っていたからだよ",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=940s"
+            }
+        ]
+    },
+    {
+        "id": "45",
+        "songName": "​桜流し",
+        "artist": "宇多田光",
+        "lyrics": "開いたばかりの花が散るのを「今年も早いね」と残念そうに見ていたあなたはとてもきれいだった もし今の私を見れたならどう思うでしょうあなた無しで生きてる私を",
+        "notes": [
+            "未歌唱"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1009s"
+            }
+        ]
+    },
+    {
+        "id": "44",
+        "songName": "​​いのちの名前",
+        "artist": "木村弓",
+        "lyrics": "青空に線を引くひこうき雲の白さはずっとどこまでも ずっと続いてく明日を知ってたみたい 胸で浅く息をしてた熱い頬 さました風も おぼえてる",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=966s"
+            }
+        ]
+    },
+    {
+        "id": "43",
+        "songName": "人生のメリーゴーランド",
+        "artist": "新垣勉",
+        "lyrics": "回れ星のように歌え花火のように向かい風にも止められないメリーゴーランド 夕焼け見渡せる楽屋口のドアは軋ませないで閉めきるのにコツがあるの",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=960s"
+            }
+        ]
+    },
+    {
+        "id": "42",
+        "songName": "风のとおり道",
+        "artist": "久石譲",
+        "lyrics": "もりのおくでうまれたかぜがはらっぱにひとり立つにれの木フワリかすめ やって来たあれはかぜのとおりみち もりのおくでうまれたかぜが見えない手さしのべてむぎの穂",
+        "notes": [
+            "未歌唱",
+            "後で探す"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=946s"
+            }
+        ]
+    },
+    {
+        "id": "41",
         "songName": "テルーの唄",
         "artist": "手嶌葵",
         "lyrics": "夕闇迫る雲の上 いつも一羽で飛んでいる 鷹はきっと悲しかろう 音も途絶えた風の中 空を掴んだその翼",
@@ -98,6 +395,71 @@
         ]
     },
     {
+        "id": "40",
+        "songName": "虹がうまれた日",
+        "artist": "森公美子",
+        "lyrics": "雨はやがてあがるもの 雲はいつか切れるもの 顔をあげてごらん 君を呼ぶ声きこえるはず",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=653s"
+            }
+        ]
+    },
+    {
+        "id": "39",
+        "songName": "守るべきもの",
+        "artist": "Sowelu",
+        "lyrics": "そしていつも あきらめてた 約束も 果たせなくて かくれてた",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=386s"
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "songName": "そこに空があるから",
+        "artist": "江崎とし子",
+        "lyrics": "振り向いてごらん 君のつけた道が 顔上げてごらん 未来を創るよ",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=386s"
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "songName": "GONG",
+        "artist": "JAM Project",
+        "lyrics": "胸にこみ上げてく 熱く 激しい この想い 僕らは行く",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=256s"
+            }
+        ]
+    },
+    {
+        "id": "36",
         "songName": "風といっしょに",
         "artist": "小林幸子",
         "lyrics": "歩きつづけて どこまで ゆくの? 風に たずねられて",
@@ -112,6 +474,7 @@
         ]
     },
     {
+        "id": "35",
         "songName": "Shangri-La",
         "artist": "石田燿子",
         "lyrics": "木漏れ日が今そっと 君の瞳を彩った まるで万華鏡 その瞬間僕は 心が躍った",
@@ -126,6 +489,7 @@
         ]
     },
     {
+        "id": "34",
         "songName": "心絵",
         "artist": "ロードオブメジャー",
         "lyrics": "描いた夢と ここにある今 ２つの景色 見比べても 形をかえて",
@@ -140,6 +504,7 @@
         ]
     },
     {
+        "id": "33",
         "songName": "KING",
         "artist": "Kanaria feat. GUMI",
         "lyrics": "幽閉 利口 逝く前に ユーヘイじゃ利口に難儀ダーリン",
@@ -154,6 +519,7 @@
         ]
     },
     {
+        "id": "32",
         "songName": "千本桜",
         "artist": "黒うさP feat. 初音ミク",
         "lyrics": "大胆不敵にハイカラ革命 磊々落々反戦国家 日の丸印の二輪車転がし 悪霊退散",
@@ -168,6 +534,7 @@
         ]
     },
     {
+        "id": "31",
         "songName": "灯火のまにまに",
         "artist": "東山奈央",
         "lyrics": "そっと心の奥 光宿した 灯火のまにまに 立ち込める八重霞",
@@ -182,6 +549,7 @@
         ]
     },
     {
+        "id": "30",
         "songName": "夏祭り",
         "artist": "Whiteberry",
         "lyrics": "君がいた夏は 遠い夢の中 空に消えてった 打ち上げ花火 君の髪の香りはじけた",
@@ -196,6 +564,7 @@
         ]
     },
     {
+        "id": "29",
         "songName": "夏色",
         "artist": "ゆず",
         "lyrics": "駐車場のネコは アクビをしながら 今日も一日を過ごしてゆく 何も変わらない おだやかな街並",
@@ -210,6 +579,7 @@
         ]
     },
     {
+        "id": "28",
         "songName": "メランコリック",
         "artist": "Junky feat. 鏡音リン",
         "lyrics": "全然つかめない君の事 全然知らない内に 心奪われるなんて事 あるはずないでしょ",
@@ -228,7 +598,7 @@
         ]
     },
     {
-        "id": "26",
+        "id": "27",
         "songName": "YUME日和",
         "artist": "島谷ひとみ",
         "lyrics": "黄金のシンバル鳴らすように 囁くのは お日様 「一緒においで 木々の宴に」",
@@ -247,7 +617,7 @@
         ]
     },
     {
-        "id": "25",
+        "id": "26",
         "songName": "きっと大丈夫",
         "artist": "Little Glee Monster",
         "lyrics": "ありがとう ありがとう 君の笑顔が 僕を支えてくれていたんだ どうか涙は隠さないでいて",
@@ -258,6 +628,22 @@
             {
                 "date": "2024-06-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=7xRIHJAD4fg&t=3788s"
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "songName": "タイプ:ワイルド",
+        "artist": "松本梨香",
+        "lyrics": "マサラタウンに サヨナラしてから どれだけの時間 たっただろう すりきずきりきず",
+        "notes": [
+            "未歌唱",
+            "音源ない"
+        ],
+        "performances": [
+            {
+                "date": "2024-06-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=7xRIHJAD4fg&t=2165s"
             }
         ]
     },
@@ -342,21 +728,6 @@
     },
     {
         "id": "19",
-        "songName": "蕾",
-        "artist": "コブクロ",
-        "lyrics": "涙こぼしても 汗にまみれた笑顔の中じゃ 誰も気付いてはくれない だから あなたの涙を僕は知らない",
-        "notes": [
-            "歌唱済み"
-        ],
-        "performances": [
-            {
-                "date": "2024-05-10",
-                "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=2260s"
-            }
-        ]
-    },
-    {
-        "id": "18",
         "songName": "ONE",
         "artist": "Crystal Kay",
         "lyrics": "友だちとはしゃぐ君を 風よ どうか連れてかないで ah 時の彼方へ",
@@ -375,6 +746,26 @@
             {
                 "date": "2024-11-12",
                 "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=665s"
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "songName": "蕾",
+        "artist": "コブクロ",
+        "lyrics": "涙こぼしても 汗にまみれた笑顔の中じゃ 誰も気付いてはくれない だから あなたの涙を僕は知らない",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2024-05-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=2203s"
+            },
+            {
+                "date": "2024-11-12",
+                "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1939s"
             }
         ]
     },

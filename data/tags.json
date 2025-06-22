@@ -1,18 +1,26 @@
 [
     {
-        "name": "清唱",
+        "name": "アカペラ",
         "color": "teal"
+    },
+    {
+        "name": "見落とし",
+        "color": "grey"
+    },
+    {
+        "name": "音源ない",
+        "color": "pink"
     },
     {
         "name": "自信ない",
         "color": "purple"
     },
     {
-        "name": "スピード早い",
+        "name": "後で探す",
         "color": "yellow"
     },
     {
-        "name": "高音が多い",
+        "name": "歌えない",
         "color": "orange"
     },
     {

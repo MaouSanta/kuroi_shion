@@ -9,6 +9,7 @@ import {
     Title,
 } from '@mantine/core';
 import {
+    IconBrandYoutube,
     IconLink, IconSearch, IconSortAscending, IconSortDescending, IconX
 } from '@tabler/icons-react';
 import dayjs from 'dayjs';
@@ -34,7 +35,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
     const [searchScopes, setSearchScopes] = useState({
         songName: true,
         artist: true,
-        lyrics: true
+        lyrics: false
     });
 
     const [activePage, setActivePage] = useState(1);
@@ -170,7 +171,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                         title="YouTube動画へ"
                         variant="filled"
                         color="red"
-                        leftSection={<IconLink size={12} />}
+                        leftSection={<IconBrandYoutube size={12} />}
                         size="sm"
                         style={{ cursor: 'pointer' }}
                     >
@@ -237,7 +238,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                         黒井獅音 歌枠セットリスト記録
                     </Title>
                     <Text ta="left" size="lg" mb="xl" c="dimmed">
-                        獅音くんが歌枠配信で歌った曲を記録中、随時更新されます...（2024/05/10まで半分収録完了）
+                        獅音くんが歌枠配信で歌った曲を記録中、随時更新されます...（2024/11/12まで収録完了）
                     </Text>
                 </Box>
             </Flex>
