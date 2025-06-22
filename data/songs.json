@@ -1,5 +1,206 @@
 [
     {
+        "id": "132",
+        "songName": "メフィスト",
+        "artist": "女王蜂",
+        "lyrics": "ラストチャンスに飢えたつま先が 踊り出すまま駆けたこの夜空 並のスタンスじゃ靡かない 星は宝石の憧れ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=3301s"
+            }
+        ]
+    },
+    {
+        "id": "131",
+        "songName": "朧月",
+        "artist": "minato(流星) feat. 初音ミク",
+        "lyrics": "朧に霞む春の月 この想い風と舞い散れ 宵の空に淡く融けて消え行く 数多の追憶",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=3287s"
+            }
+        ]
+    },
+    {
+        "id": "130",
+        "songName": "崖の上のポニョ",
+        "artist": "藤岡藤巻と大橋のぞみ",
+        "lyrics": "ポーニョ ポーニョ ポニョ さかなの子 青い海からやってきた",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=3022s"
+            }
+        ]
+    },
+    {
+        "id": "129",
+        "songName": "打上花火",
+        "artist": "DAOKO × 米津玄師",
+        "lyrics": "あの日見渡した渚を今も思い出すんだ 砂の上に刻んだ言葉君の後ろ姿 寄り返す波が足元をよぎり何かを攫う 夕凪の中日暮れだけが通り過ぎて行く",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2987s"
+            }
+        ]
+    },
+    {
+        "id": "128",
+        "songName": "いつも何度でも",
+        "artist": "木村弓",
+        "lyrics": "呼んでいる 胸のどこか奥で いつも心踊る 夢を見たい かなしみは",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2494s"
+            }
+        ]
+    },
+    {
+        "id": "127",
+        "songName": "だから僕は音楽を辞めた",
+        "artist": "ヨルシカ",
+        "lyrics": "考えたってわからないし 青空の下、君を待った 風が吹いた正午、昼下がりを抜け出す想像 ねぇ、これからどうなるんだろうね 進め方教わらないんだよ",
+        "notes": [
+            "未歌唱",
+            "見落とし"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2424s"
+            }
+        ]
+    },
+    {
+        "id": "126",
+        "songName": "時には昔の話を",
+        "artist": "加藤登紀子",
+        "lyrics": "時には昔の話をしようか 通いなれた なじみのあの店 マロニエの並木が窓辺に見えてた コーヒーを一杯で一日",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2367s"
+            }
+        ]
+    },
+    {
+        "id": "125",
+        "songName": "ヤキモチ",
+        "artist": "高橋優",
+        "lyrics": "君が前に付き合っていた人のこと 僕に打ち明けてくれたとき 素直に聴いてあげられずに 寂しい思いをさせてしまったね",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2319s"
+            }
+        ]
+    },
+    {
+        "id": "124",
+        "songName": "Best of my Love",
+        "artist": "安田レイ",
+        "lyrics": "何度 生まれ変わっても 君とまた巡り逢いたい こんな気持ちを ありがとう",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2264s"
+            }
+        ]
+    },
+    {
+        "id": "123",
+        "songName": "生きてこそ",
+        "artist": "Kiroro",
+        "lyrics": "ママ私が生まれた日の 空はどんな色 パパ私が生まれた日の 気持ちは どうだった?",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=1893s"
+            }
+        ]
+    },
+    {
+        "id": "122",
+        "songName": "promise(ゲッダン)",
+        "artist": "広瀬香美",
+        "lyrics": "恋の始まりも 夢の続きも きっとあなたと… 冷たい北風",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=1272s"
+            }
+        ]
+    },
+    {
+        "id": "121",
+        "songName": "未来へ",
+        "artist": "Kiroro",
+        "lyrics": "ほら 足元を見てごらん これがあなたの歩む道 ほら 前を見てごらん",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=1276s"
+            }
+        ]
+    },
+    {
+        "id": "120",
+        "songName": "カントリー・ロード",
+        "artist": "本名陽子",
+        "lyrics": "カントリー・ロード この道 ずっとゆけば あの街に つづいてる",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=299s"
+            }
+        ]
+    },
+    {
         "id": "119",
         "songName": "さよーならまたいつか！",
         "artist": "米津玄師",
@@ -59,6 +260,10 @@
             {
                 "date": "2025-03-29",
                 "youtubeLink": "https://www.youtube.com/watch?v=3BZ7aNeLjiQ&t=2426s"
+            },
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=4116s"
             }
         ]
     },
@@ -782,6 +987,10 @@
             {
                 "date": "2024-12-11",
                 "youtubeLink": "https://www.youtube.com/watch?v=IZ0M3JiPIVs&t=2185s"
+            },
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2806s"
             }
         ]
     },
@@ -1346,6 +1555,10 @@
             {
                 "date": "2024-11-12",
                 "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=274s"
+            },
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=823s"
             }
         ]
     },
@@ -1361,6 +1574,10 @@
             {
                 "date": "2024-09-21",
                 "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=3984s"
+            },
+            {
+                "date": "2025-04-15",
+                "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=3652s"
             }
         ]
     },
