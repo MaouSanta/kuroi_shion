@@ -10,7 +10,7 @@ import {
 } from '@mantine/core';
 import {
     IconBrandYoutube,
-    IconLink, IconSearch, IconSortAscending, IconSortDescending, IconX
+    IconSearch, IconSortAscending, IconSortDescending, IconX
 } from '@tabler/icons-react';
 import dayjs from 'dayjs';
 import { Fragment, useMemo, useState } from 'react';
