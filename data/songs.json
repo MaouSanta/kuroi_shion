@@ -1,5 +1,722 @@
 [
     {
+        "id": "191",
+        "songName": "Tomorrow",
+        "artist": "岡本真夜",
+        "lyrics": "涙の数だけ強くなれるよ アスファルトに咲く花のように 見るものすべてに おびえないで 明日は来るよ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8934s"
+            }
+        ]
+    },
+    {
+        "id": "190",
+        "songName": "負けないで",
+        "artist": "ZARD",
+        "lyrics": "ふとした瞬間に 視線がぶつかる 幸運のときめき 覚えているでしょ パステルカラーの季節に恋した",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8605s"
+            }
+        ]
+    },
+    {
+        "id": "189",
+        "songName": "WOW WAR TONIGHT～時には起こせよムーヴメント～",
+        "artist": "H Jungle With T",
+        "lyrics": "たまにはこうして肩を並べて飲んで ほんのすこしだけ立ち止まってみたいよ 純情を絵に描いた様なさんざんむなしい夜も 笑って話せる今夜はいいね… 温泉でも行こうなんて",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8309s"
+            }
+        ]
+    },
+    {
+        "id": "188",
+        "songName": "群青",
+        "artist": "YOASOBI",
+        "lyrics": "嗚呼、いつもの様に 過ぎる日々にあくびが出る さんざめく夜、越え、今日も 渋谷の街に朝が降る どこか虚しいような",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8299s"
+            }
+        ]
+    },
+    {
+        "id": "187",
+        "songName": "太陽系デスコ",
+        "artist": "ナユタン星人 feat. 初音ミク",
+        "lyrics": "あの一等星のさんざめく光で あなたとダンスを踊ろうか 我が太陽系の鼓動に合わせて 絡まったステップで綺羅めいて、星ッ!",
+        "notes": [
+            "歌唱済み",
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8352s"
+            }
+        ]
+    },
+    {
+        "id": "186",
+        "songName": "彗星ハネムーン",
+        "artist": "ナユタン星人 feat. 初音ミク",
+        "lyrics": "キラキラ光る流星群 わたし想うわウォーアイニー 星のまにまに逃避行 嗚呼、そんなストーリーも悪くないのさ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8248s"
+            }
+        ]
+    },
+    {
+        "id": "185",
+        "songName": "そばかす",
+        "artist": "JUDY AND MARY",
+        "lyrics": "大キライだった そばかすを ちょっと ひとなでして タメ息をひとつ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=8226s"
+            }
+        ]
+    },
+    {
+        "id": "184",
+        "songName": "猫",
+        "artist": "DISH//",
+        "lyrics": "夕焼けが燃えてこの街ごと 飲み込んでしまいそうな今日に 僕は君を手放してしまった 明日が不安だ",
+        "notes": [
+            "未歌唱",
+            "アカペラ",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7654s"
+            }
+        ]
+    },
+    {
+        "id": "183",
+        "songName": "世界に一つだけの花",
+        "artist": "SMAP",
+        "lyrics": "花屋の店先に並んだ いろんな花を見ていた ひとそれぞれ好みはあるけど どれもみんなきれいだね",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7795s"
+            }
+        ]
+    },
+    {
+        "id": "182",
+        "songName": "上を向いて歩こう",
+        "artist": "坂本九",
+        "lyrics": "上を向いて歩こう 涙がこぼれないように 思い出す 春の日 一人ぽっちの夜",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7348s"
+            }
+        ]
+    },
+    {
+        "id": "181",
+        "songName": "見上げてごらん夜の星を",
+        "artist": "坂本九",
+        "lyrics": "見上げてごらん夜の星を 小さな星の 小さな光が ささやかな幸せをうたってる 見上げてごらん夜の星を",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7270s"
+            }
+        ]
+    },
+    {
+        "id": "180",
+        "songName": "だんご3兄弟",
+        "artist": "速水けんたろう・茂森あゆみ",
+        "lyrics": "串にささって だんご だんご 3つならんで だんご",
+        "notes": [
+            "未歌唱",
+            "曲知らない",
+            "音源ない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7221s"
+            }
+        ]
+    },
+    {
+        "id": "179",
+        "songName": "卵とじ",
+        "artist": "倉橋ヨエコ",
+        "lyrics": "言えない気持ちを卵とじ お弁当に詰めまして 行こう行こう行こう ねえ 行こう行こう",
+        "notes": [
+            "未歌唱",
+            "音源ない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7132s"
+            }
+        ]
+    },
+    {
+        "id": "178",
+        "songName": "赤いスイートピー",
+        "artist": "松田聖子",
+        "lyrics": "春色の汽車に乗って 海に 連れて行ってよ 煙草の匂いのシャツに そっと",
+        "notes": [
+            "歌唱済み",
+            "アカペラ",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=5125s"
+            }
+        ]
+    },
+    {
+        "id": "177",
+        "songName": "you -Visionen im Spiegel",
+        "artist": "癒月",
+        "lyrics": "あなたは今どこで何をしていますか? この空の続く場所にいますか? 今まで私の心を埋めていたモノ 失って初めて気づいた",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=5215s"
+            }
+        ]
+    },
+    {
+        "id": "176",
+        "songName": "イケナイ太陽",
+        "artist": "ORANGE RANGE",
+        "lyrics": "イケナイ太陽 Na Na チョットでいいから",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない",
+            "アカペラ"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=4978s"
+            }
+        ]
+    },
+    {
+        "id": "175",
+        "songName": "Voyage",
+        "artist": "浜崎あゆみ",
+        "lyrics": "僕達は幸せになるため この旅路を行くんだ ほら笑顔がとても似合う 色褪せる事なく蘇る",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=4520s"
+            }
+        ]
+    },
+    {
+        "id": "174",
+        "songName": "チューリングラブ",
+        "artist": "ナナヲアカリ feat. Sou",
+        "lyrics": "あー、恋の定義がわかんない まずスキって基準もわかんない 要は、恋してるときが恋らしい 客観? 主観?",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=4428s"
+            }
+        ]
+    },
+    {
+        "id": "173",
+        "songName": "ヒロイン育成計画",
+        "artist": "HoneyWorks feat. 涼海ひより(水瀬いのり)",
+        "lyrics": "きっとヒロインなら綺麗で 王子様にチヤホヤされるでしょ? 芋女の私もお姫様になれたらなんてね(イエイ) バイト探し",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=4428s"
+            }
+        ]
+    },
+    {
+        "id": "172",
+        "songName": "ひゅるりらぱっぱ",
+        "artist": "tuki.",
+        "lyrics": "はらりはられ 今踊り踊れ 恋焦がれ遊べさぁ 喰らって唄え",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=4030s"
+            }
+        ]
+    },
+    {
+        "id": "171",
+        "songName": "My Revolution",
+        "artist": "渡辺美里",
+        "lyrics": "さよなら Sweet Pain 頬づえついていた 夜は昨日で終わるよ",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=3972s"
+            }
+        ]
+    },
+    {
+        "id": "170",
+        "songName": "どんなときも。",
+        "artist": "槇原敬之",
+        "lyrics": "僕の背中は自分が 思うより正直かい？ 誰かに聞かなきゃ 不安になってしまうよ 旅立つ僕の為に",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=3932s"
+            }
+        ]
+    },
+    {
+        "id": "169",
+        "songName": "それが大事",
+        "artist": "大事MANブラザーズバンド",
+        "lyrics": "負けない事・投げ出さない事・逃げ出さない事・信じ抜く事 駄目になりそうな時 それが一番 大事 負けない事・投げ出さない事・逃げ出さない事・信じ抜く事",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=3909s"
+            }
+        ]
+    },
+    {
+        "id": "168",
+        "songName": "いつでも誰かが",
+        "artist": "上々颱風",
+        "lyrics": "いつでも誰かが きっとそばにいる 思い出しておくれ すてきなその名を 心がふさいで",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2990s"
+            }
+        ]
+    },
+    {
+        "id": "167",
+        "songName": "veil",
+        "artist": "須田景凪",
+        "lyrics": "笑えない日々を辿ったって 変わらない今を呪ったって 宙に舞った言葉じゃ あなたを救えないのだろう",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2920s"
+            }
+        ]
+    },
+    {
+        "id": "166",
+        "songName": "ダーリン",
+        "artist": "須田景凪",
+        "lyrics": "私じゃ駄目ですか 誰よりもあなたを わかってるの わかってるのは きっと私だけ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2920s"
+            }
+        ]
+    },
+    {
+        "id": "165",
+        "songName": "雑魚",
+        "artist": "柊マグネタイト feat. 亞北ネル",
+        "lyrics": "ざこざこざこざこ くだらない存在 あわれだね ざこざこざこざこ ざこのざこ攻撃",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2393s"
+            }
+        ]
+    },
+    {
+        "id": "164",
+        "songName": "モニタリング",
+        "artist": "DECO*27",
+        "lyrics": "ねえあたし知ってるよ きみがひとり\"XX\"してるの知ってるよ ビクンビクン震えてさ 声もダダ漏れなんだわ 正直に言っちゃえよ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2393s"
+            }
+        ]
+    },
+    {
+        "id": "163",
+        "songName": "俺ら東京さ行ぐだ",
+        "artist": "吉幾三",
+        "lyrics": "テレビも無ェ ラジオも無ェ 自動車もそれほど走って無ェ ピアノも無ェ バーも無ェ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2360s"
+            }
+        ]
+    },
+    {
+        "id": "162",
+        "songName": "ニホンノミカタ ―ネバダカラキマシタ―",
+        "artist": "矢島美容室",
+        "lyrics": "wow wow wow wow 遠くから 来ています NEVADAから 来ています",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2415s"
+            }
+        ]
+    },
+    {
+        "id": "161",
+        "songName": "ばかみたい",
+        "artist": "桐生一馬(黒田崇矢)",
+        "lyrics": "馬鹿みたい 子供なのね 夢を追って傷ついて 嘘が下手なくせに 笑えない笑顔みせた",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2334s"
+            }
+        ]
+    },
+    {
+        "id": "160",
+        "songName": "小さな恋のうた",
+        "artist": "MONGOL800",
+        "lyrics": "広い宇宙の数ある一つ 青い地球の広い世界で 小さな恋の思いは届く 小さな島のあなたのもとへ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=2040s"
+            }
+        ]
+    },
+    {
+        "id": "159",
+        "songName": "花火",
+        "artist": "aiko",
+        "lyrics": "眠りにつくかつかないか シーツの中の瞬間はいつも あなたの事 考えてて 夢は夢で目が覚めればひどく悲しいものです",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1990s"
+            }
+        ]
+    },
+    {
+        "id": "158",
+        "songName": "ツギハギスタッカート",
+        "artist": "とあ feat. 初音ミク",
+        "lyrics": "ツギハギだらけの君との時間も そろそろ終わりにしよう この糸 ちぎるの 色とりどり散らばるでしょ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1955s"
+            }
+        ]
+    },
+    {
+        "id": "157",
+        "songName": "バラライカ",
+        "artist": "月島きらり starring 久住小春",
+        "lyrics": "ゆらりゆらり揺れている乙女心ピ～ンチ! かなりかなりヤバイのよ たすけてダーリン!クラクラリン 何もかもが新しい世界にきちゃったわ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1680s"
+            }
+        ]
+    },
+    {
+        "id": "156",
+        "songName": "恋愛サーキュレーション",
+        "artist": "千石撫子(花澤香菜)",
+        "lyrics": "でも そんなんじゃ だめ もう そんなんじゃ",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1672s"
+            }
+        ]
+    },
+    {
+        "id": "155",
+        "songName": "Butcher Vanity",
+        "artist": "Vane Lily feat. Yi Xi",
+        "lyrics": "They say my hunger's a problem They tell me to curb my appetite They say I can't keep myself from trying",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1663s"
+            }
+        ]
+    },
+    {
+        "id": "154",
+        "songName": "恋愛レボリューション21",
+        "artist": "モーニング娘。",
+        "lyrics": "(Woo Love Revolution) (Woo Love Revolution) 乾杯 BABY！ 紙コップでYEAH！いいんじゃないOH YES気持ちが大事飾りはBABY！",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1612s"
+            }
+        ]
+    },
+    {
+        "id": "153",
+        "songName": "招き猫",
+        "artist": "水曜日のカンパネラ",
+        "lyrics": "千客万来 千客万来 右手あげりゃ 商売繁盛",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1544s"
+            }
+        ]
+    },
+    {
+        "id": "152",
+        "songName": "深海少女",
+        "artist": "ゆうゆ feat. 初音ミク",
+        "lyrics": "悲しみの海に沈んだ私 目を開けるのも億劫 このままどこまでも堕ちて行き 誰にも見つけられないのかな",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1547s"
+            }
+        ]
+    },
+    {
+        "id": "151",
+        "songName": "恋愛裁判",
+        "artist": "40mP feat. 初音ミク",
+        "lyrics": "Oh！ No！ No！ No！ ちょっと魔がさしたんだ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1539s"
+            }
+        ]
+    },
+    {
+        "id": "150",
+        "songName": "ビターチョコデコレーション",
+        "artist": "syudou feat. 初音ミク",
+        "lyrics": "人を過度に信じないように 愛さないように期待しないように かと言って角が立たないように 気取らぬように目立たぬように",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1495s"
+            }
+        ]
+    },
+    {
+        "id": "149",
+        "songName": "ポニーテールとシュシュ",
+        "artist": "AKB48",
+        "lyrics": "カレンダーより早く シャツの袖口まくって 太陽が近づく気配 僕の腕から衣替え",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1475s"
+            }
+        ]
+    },
+    {
+        "id": "148",
+        "songName": "晴る",
+        "artist": "ヨルシカ",
+        "lyrics": "貴方は風のように 目を閉じては夕暮れ 何を思っているんだろうか 目蓋を開いていた",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=706s"
+            }
+        ]
+    },
+    {
+        "id": "147",
+        "songName": "夜空ノムコウ",
+        "artist": "SMAP",
+        "lyrics": "あれからぼくたちは 何かを信じてこれたかなぁ・・・ 夜空のむこうには 明日がもう待っている",
+        "notes": [
+            "未歌唱",
+            "アカペラ",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=639s"
+            }
+        ]
+    },
+    {
         "id": "146",
         "songName": "ハッピーシンセサイザ",
         "artist": "EasyPop feat. 巡音ルカ,GUMI",
@@ -87,6 +804,10 @@
             {
                 "date": "2025-05-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=1766s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=6233s"
             }
         ]
     },
@@ -419,6 +1140,10 @@
             {
                 "date": "2025-04-15",
                 "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=299s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=3520s"
             }
         ]
     },
@@ -914,6 +1639,10 @@
             {
                 "date": "2025-04-26",
                 "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=1195s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=6860s"
             }
         ]
     },
@@ -1226,12 +1955,21 @@
         "artist": "涼宮ハルヒ(平野綾)",
         "lyrics": "渇いた心で駆け抜ける ごめんね何もできなくて 痛みを分かち合うことさえ あなたは許してくれない",
         "notes": [
-            "歌唱済み"
+            "歌唱済み",
+            "アカペラ"
         ],
         "performances": [
             {
                 "date": "2024-12-11",
                 "youtubeLink": "https://www.youtube.com/watch?v=IZ0M3JiPIVs&t=1739s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=6425s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=6507s"
             }
         ]
     },
@@ -1367,6 +2105,10 @@
             {
                 "date": "2024-11-12",
                 "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=3954s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=742s"
             }
         ]
     },
@@ -1397,6 +2139,10 @@
             {
                 "date": "2024-11-12",
                 "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=3304s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=7450s"
             }
         ]
     },
@@ -1655,6 +2401,10 @@
             {
                 "date": "2024-11-12",
                 "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=966s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=3865s"
             }
         ]
     },
@@ -1849,6 +2599,10 @@
             {
                 "date": "2024-09-21",
                 "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=2400s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=1100s"
             }
         ]
     },
@@ -1942,11 +2696,11 @@
                 "youtubeLink": "https://www.youtube.com/watch?v=7xRIHJAD4fg&t=4207s"
             },
             {
-                "data": "2024-09-21",
+                "date": "2024-09-21",
                 "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=4498s"
             },
             {
-                "data": "2024-12-11",
+                "date": "2024-12-11",
                 "youtubeLink": "https://www.youtube.com/watch?v=IZ0M3JiPIVs&t=3749s"
             },
             {
@@ -1960,6 +2714,10 @@
             {
                 "date": "2025-05-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=4518s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=9375s"
             }
         ]
     },
@@ -2059,6 +2817,10 @@
             {
                 "date": "2024-05-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=3149s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=5870s"
             }
         ]
     },
@@ -2260,8 +3022,12 @@
                 "youtubeLink": "https://www.youtube.com/watch?v=8sQgf0k6sfM&t=2050s"
             },
             {
-                "date:": "2025-04-26",
+                "date": "2025-04-26",
                 "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=199s"
+            },
+            {
+                "date": "2025-06-06",
+                "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=280s"
             }
         ]
     },

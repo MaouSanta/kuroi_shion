@@ -4,12 +4,12 @@
 import { Song } from '@/types/song';
 import { Tag } from '@/types/tag';
 import {
-    ActionIcon, Badge, Box, Checkbox, Flex, Group, Pagination,
+    ActionIcon, Anchor, Badge, Box, Checkbox, Flex, Group, Pagination,
     ScrollArea, SegmentedControl, Table, Text, TextInput, Tooltip,
     Title,
 } from '@mantine/core';
 import {
-    IconBrandYoutube,
+    IconBrandYoutube, IconBrandX,
     IconSearch, IconSortAscending, IconSortDescending, IconX
 } from '@tabler/icons-react';
 import dayjs from 'dayjs';
@@ -238,9 +238,26 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                         黒井獅音 歌枠セットリスト記録
                     </Title>
                     <Text ta="left" size="lg" mb="xl" c="dimmed">
-                        獅音くんが歌枠配信で歌った曲を記録中、随時更新されます...（2024/11/12まで収録完了）
+                        獅音くんが歌枠配信で歌った曲・まだ歌っていない曲を記録しています。（2025年6月6日までの配信を収録済み）
                     </Text>
                 </Box>
+                <Group gap="md">
+                    <Anchor href="https://youtube.com/playlist?list=PLp9HYYgYosViGuf0aT7zQsyt9pI5q71F6" target="_blank" rel="noopener noreferrer" title="獅音さんの歌枠リンク">
+                        <Group gap={4}>
+                            <IconBrandYoutube size={24} /> <Text size="m">歌枠リンク</Text>
+                        </Group>
+                    </Anchor>
+                    <Anchor href="https://www.youtube.com/@kuroishion" target="_blank" rel="noopener noreferrer" title="獅音さんのYoutube">
+                        <Group gap={4}>
+                            <IconBrandYoutube size={24} /> <Text size="m">黒井獅音</Text>
+                        </Group>
+                    </Anchor>
+                    <Anchor href="https://x.com/kuroi_shion" target="_blank" rel="noopener noreferrer" title="獅音さんのX (Twitter)">
+                        <Group gap={4}>
+                            <IconBrandX size={24} /> <Text size="m">黒井獅音</Text>
+                        </Group>
+                    </Anchor>
+                </Group>
             </Flex>
 
             {/* 搜索和筛选区域保持不变 */}
