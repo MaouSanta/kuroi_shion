@@ -194,12 +194,12 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         return (
             <Table.Tr key={song.id}>
                 <Table.Td>
-                    <Text lineClamp={2}> {/* 限制最多显示2行，超出部分显示省略号 */}
+                    <Text> {/* 限制最多显示2行，超出部分显示省略号 */}
                         {highlightText(song.songName, searchScopes.songName ? searchTerm : '')}
                     </Text>
                 </Table.Td>
                 <Table.Td>
-                    <Text lineClamp={2}>
+                    <Text>
                         {highlightText(song.artist, searchScopes.artist ? searchTerm : '')}
                     </Text>
                 </Table.Td>
@@ -316,9 +316,10 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
             <ScrollArea
                 h="auto"
                 type="always"
+                scrollbars="x" // 重新启用 ScrollArea 的水平滚动
                 style={{ flexGrow: 1 }}
             >
-                <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed', minWidth: '800px' }}>
+                <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed' }}>
                     <Table.Thead>
                         <Table.Tr>
                             <Table.Th style={{ width: '20%' }}>
@@ -351,7 +352,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                         <Table.Tbody>{rows}</Table.Tbody>
                     )}
                 </Table>
-
                 {/* 如果没有找到歌曲，在表格下方显示提示 */}
                 {filteredAndSortedSongs.length === 0 && (
                     <Text ta="center" c="dimmed" py="xl" style={{ borderTop: '1px solid var(--mantine-color-gray-2)' }}>
