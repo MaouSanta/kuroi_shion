@@ -318,7 +318,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 type="always"
                 style={{ flexGrow: 1 }}
             >
-                <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed' }}>
+                <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed', minWidth: '800px' }}>
                     <Table.Thead>
                         <Table.Tr>
                             <Table.Th style={{ width: '20%' }}>
