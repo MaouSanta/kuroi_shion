@@ -1,5 +1,223 @@
 [
     {
+        "id": "146",
+        "songName": "ハッピーシンセサイザ",
+        "artist": "EasyPop feat. 巡音ルカ,GUMI",
+        "lyrics": "ハッピーシンセサイザ 君の 胸の奥まで 届くようなメロディ 奏でるよ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=4077s"
+            }
+        ]
+    },
+    {
+        "id": "145",
+        "songName": "結ンデ開イテ羅刹ト骸",
+        "artist": "ハチ feat. 初音ミク",
+        "lyrics": "片足無くした猫が笑う 「ソコ行く御嬢サン遊ビマショ」 首輪に繋がる赤い紐は 片足の代わりになっちゃいない",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=3549s"
+            }
+        ]
+    },
+    {
+        "id": "144",
+        "songName": "Lemon",
+        "artist": "米津玄師",
+        "lyrics": "夢ならばどれほどよかったでしょう 未だにあなたのことを夢にみる 忘れた物を取りに帰るように 古びた思い出の埃を払う",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=3202s"
+            }
+        ]
+    },
+    {
+        "id": "143",
+        "songName": "おさかな天国",
+        "artist": "柴矢裕美",
+        "lyrics": "好きだとイワシてサヨリちゃん タイしたもんだよスズキくん イカした君たちみならって ぼくもカレイに変身するよ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=2715s"
+            }
+        ]
+    },
+    {
+        "id": "142",
+        "songName": "だれかの心臓になれたなら",
+        "artist": "ユリイ・カノン feat. GUMI",
+        "lyrics": "「こんな世界」と嘆くだれかの 生きる理由になれるでしょうか これは僕が いま君に贈る",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=2351s"
+            }
+        ]
+    },
+    {
+        "id": "141",
+        "songName": "HOT LIMIT",
+        "artist": "T.M.Revolution",
+        "lyrics": "YO!SAY,夏が 胸を刺激する ナマ足 魅惑の マーメイド",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=1766s"
+            }
+        ]
+    },
+    {
+        "id": "140",
+        "songName": "secret base ～君がくれたもの～",
+        "artist": "ZONE",
+        "lyrics": "君と夏の終わり 将来の夢 大きな希望 忘れない １０年後の８月",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=1679s"
+            }
+        ]
+    },
+    {
+        "id": "139",
+        "songName": "未来のミュージアム",
+        "artist": "Perfume",
+        "lyrics": "みんなで行こう 僕たちの夢 ほら 広がる世界の先へ 手をかざして",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=3302s"
+            }
+        ]
+    },
+    {
+        "id": "138",
+        "songName": "ハロ/ハワユ",
+        "artist": "ナノウ(ほえほえP) feat. 初音ミク",
+        "lyrics": "ハロ 窓を開けて 小さく呟いた ハワユ 誰もいない",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=3255s"
+            }
+        ]
+    },
+    {
+        "id": "137",
+        "songName": "星めぐりの歌",
+        "artist": "佐藤礼央,宮沢賢治,本田みちよ",
+        "lyrics": "あかいめだまのさそり ひろげた鷲のつばさ あをいめだまの小いぬ ひかりのへびのとぐろ オリオンは高くうたひ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=2927s"
+            },
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=3242s"
+            }
+        ]
+    },
+    {
+        "id": "136",
+        "songName": "ガジュマル ～Heaven in the Rain～",
+        "artist": "ReoNa",
+        "lyrics": "心残りが あるとしたなら 言えなかった 「さよなら」でしょうか 後悔ばかり",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=2926s"
+            }
+        ]
+    },
+    {
+        "id": "135",
+        "songName": "神のまにまに",
+        "artist": "れるりり feat. 初音ミク",
+        "lyrics": "思い通りに行かないことだらけ どうしようもなく自己嫌悪 八百万の痛みや悲しみから 逃げ込める場所を探してる",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=2456s"
+            }
+        ]
+    },
+    {
+        "id": "134",
+        "songName": "ルージュの伝言",
+        "artist": "松任谷由実",
+        "lyrics": "あのひとのママに会うために 今、ひとり列車に乗ったの たそがれせまる街並や車の流れ 横目で追い越して",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=574s"
+            }
+        ]
+    },
+    {
+        "id": "133",
+        "songName": "天ノ弱",
+        "artist": "164 feat. GUMI",
+        "lyrics": "僕がずっと前から思ってる事を話そうか 友達に戻れたらこれ以上はもう望まないさ 君がそれでいいなら僕だってそれで構わないさ 嘘つきの僕が吐いた はんたいことばの愛のうた",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=574s"
+            }
+        ]
+    },
+    {
         "id": "132",
         "songName": "メフィスト",
         "artist": "女王蜂",
@@ -51,12 +269,16 @@
         "lyrics": "あの日見渡した渚を今も思い出すんだ 砂の上に刻んだ言葉君の後ろ姿 寄り返す波が足元をよぎり何かを攫う 夕凪の中日暮れだけが通り過ぎて行く",
         "notes": [
             "未歌唱",
-            "見落とし"
+            "曲知らない"
         ],
         "performances": [
             {
                 "date": "2025-04-15",
                 "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=2987s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=3558s"
             }
         ]
     },
@@ -678,7 +900,7 @@
     },
     {
         "id": "89",
-        "songName": "檄！帝国華撃団",
+        "songName": "檄！帝国華撃団(ゲキテイ)",
         "artist": "横山智佐(真宮寺さくら)+帝国歌劇団",
         "lyrics": "引き裂いた 闇が吠え 震える帝都に 愛の歌 高らかに",
         "notes": [
@@ -688,6 +910,10 @@
             {
                 "date": "2025-01-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=RX9uKWTTWG8&t=3095s"
+            },
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=1195s"
             }
         ]
     },
@@ -1653,6 +1879,10 @@
             {
                 "date": "2024-09-21",
                 "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=1303s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=507s"
             }
         ]
     },
@@ -1672,6 +1902,10 @@
             {
                 "date": "2025-01-18",
                 "youtubeLink": "https://www.youtube.com/watch?v=RX9uKWTTWG8&t=579s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=200s"
             }
         ]
     },
@@ -1722,6 +1956,10 @@
             {
                 "date": "2025-03-29",
                 "youtubeLink": "https://www.youtube.com/watch?v=3BZ7aNeLjiQ&t=3740s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=4518s"
             }
         ]
     },
@@ -1768,6 +2006,10 @@
             {
                 "date": "2024-06-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=7xRIHJAD4fg&t=1122s"
+            },
+            {
+                "date": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=1731s"
             }
         ]
     },
@@ -2016,6 +2258,10 @@
             {
                 "date": "2025-02-20",
                 "youtubeLink": "https://www.youtube.com/watch?v=8sQgf0k6sfM&t=2050s"
+            },
+            {
+                "date:": "2025-04-26",
+                "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=199s"
             }
         ]
     },
@@ -2093,6 +2339,10 @@
             {
                 "date": "2025-02-20",
                 "youtubeLink": "https://www.youtube.com/watch?v=8sQgf0k6sfM&t=438s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=3661s"
             }
         ]
     },
@@ -2127,6 +2377,10 @@
             {
                 "date": "2024-04-11",
                 "youtubeLink": "https://www.youtube.com/watch?v=x-tf7xnJ1hc&t=1887s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=876s"
             }
         ]
     },
@@ -2146,6 +2400,10 @@
             {
                 "date": "2025-01-18",
                 "youtubeLink": "https://www.youtube.com/watch?v=RX9uKWTTWG8&t=3920s"
+            },
+            {
+                "date": "2025-05-22",
+                "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=1319s"
             }
         ]
     },
