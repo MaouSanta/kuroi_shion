@@ -194,7 +194,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
         return (
             <Table.Tr key={song.id}>
                 <Table.Td>
-                    <Text> {/* 限制最多显示2行，超出部分显示省略号 */}
+                    <Text>
                         {highlightText(song.songName, searchScopes.songName ? searchTerm : '')}
                     </Text>
                 </Table.Td>
@@ -231,7 +231,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
     };
     return (
         <Box style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-            {/* 标题和副标题区域保持不变 */}
             <Flex justify="space-between" align="flex-start" mb="lg" wrap="wrap">
                 <Box style={{ flexGrow: 1, minWidth: '300px' }}>
                     <Title ta="left" order={1} mb="md">
@@ -240,6 +239,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                     <Text ta="left" size="lg" mb="xl" c="dimmed">
                         獅音くんが歌枠配信で歌った曲・まだ歌っていない曲を記録しています。（2025年6月6日までの配信を収録済み）
                     </Text>
+                    <Text ta="left" size="xm" mb="xm" c="dimmed">「曲名」「アーティスト」「該当配信」「回数」をクリックすると、それぞれの項目で並び替えができます。</Text>
                 </Box>
                 <Group gap="md">
                     <Anchor href="https://youtube.com/playlist?list=PLp9HYYgYosViGuf0aT7zQsyt9pI5q71F6" target="_blank" rel="noopener noreferrer" title="獅音さんの歌枠リンク">
@@ -260,7 +260,6 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 </Group>
             </Flex>
 
-            {/* 搜索和筛选区域保持不变 */}
             <Flex gap="md" wrap="wrap" mb="lg" align="flex-end" justify="space-between">
                 <TextInput
                     placeholder="キーワードを入力して検索"
@@ -277,7 +276,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                     style={{ flexGrow: 1, minWidth: '200px' }}
                 />
 
-                <Box style={{ flexGrow: 1, minWidth: '180px' }}>
+                <Box style={{ flexGrow: 1, minWidth: '90px' }}>
                     <Text size="sm" fw={500} mb="xs">検索範囲</Text>
                     <Group gap="sm">
                         <Checkbox
@@ -312,55 +311,67 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                 )}
             </Flex>
 
-            {/* --- 关键修改：始终显示表格，但条件渲染 tbody 和分页/统计 --- */}
-            <ScrollArea
-                h="auto"
-                type="always"
-                scrollbars="x" // 重新启用 ScrollArea 的水平滚动
-                style={{ flexGrow: 1 }}
-            >
-                <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed' }}>
-                    <Table.Thead>
-                        <Table.Tr>
-                            <Table.Th style={{ width: '20%' }}>
-                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('songName')}>
-                                    曲名 {renderSortIcon('songName')}
-                                </Group>
-                            </Table.Th>
-                            <Table.Th style={{ width: '15%' }}>
-                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('artist')}>
-                                    アーティスト {renderSortIcon('artist')}
-                                </Group>
-                            </Table.Th>
-                            <Table.Th style={{ width: '24%' }}>
-                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('date')}>
-                                    該当配信 {renderSortIcon('date')}
-                                </Group>
-                            </Table.Th>
-                            <Table.Th style={{ width: '6%' }}>
-                                <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('performanceCount')}>
-                                    回数 {renderSortIcon('performanceCount')}
-                                </Group>
-                            </Table.Th>
-                            <Table.Th style={{ width: '20%' }}>歌詞</Table.Th>
-                            <Table.Th style={{ width: '15%' }}>備考</Table.Th>
-                        </Table.Tr>
-                    </Table.Thead>
+            <ScrollArea h="auto" type="always"
+                style={{
+                    width: '100%',
+                    FlexGrow: 1,
+                    border: '1px solid var(--mantine-color-gray-3)',
+                    borderRadius: 4,
+                    overflowX: 'hidden'
+                }}
+                viewportProps={{
+                    style: {
+                        width: '100%',      // 保持 viewport 不被撑大
+                        overflowX: 'auto',
+                        overflowY: 'hidden',
+                    },
+                }}>
+                <Box style={{
+                    width: 'clamp(100%, 900px, 1200px)',
+                    // width: 'fit-content', overflowX: 'auto', minWidth: '100%',
+                    // WebkitOverflowScrolling: 'touch', maxWidth: '1000px',
+                }}>
+                    <Table stickyHeader striped highlightOnHover withTableBorder withColumnBorders style={{ tableLayout: 'fixed', width: '100%' }}>
+                        <Table.Thead>
+                            <Table.Tr>
+                                <Table.Th style={{ width: '20%' }}>
+                                    <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('songName')}>
+                                        曲名 {renderSortIcon('songName')}
+                                    </Group>
+                                </Table.Th>
+                                <Table.Th style={{ width: '15%' }}>
+                                    <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('artist')}>
+                                        アーティスト {renderSortIcon('artist')}
+                                    </Group>
+                                </Table.Th>
+                                <Table.Th style={{ width: '24%' }}>
+                                    <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('date')}>
+                                        該当配信 {renderSortIcon('date')}
+                                    </Group>
+                                </Table.Th>
+                                <Table.Th style={{ width: '6%' }}>
+                                    <Group gap="xs" style={{ cursor: 'pointer' }} onClick={() => handleSort('performanceCount')}>
+                                        回数 {renderSortIcon('performanceCount')}
+                                    </Group>
+                                </Table.Th>
+                                <Table.Th style={{ width: '20%' }}>歌詞</Table.Th>
+                                <Table.Th style={{ width: '15%' }}>備考</Table.Th>
+                            </Table.Tr>
+                        </Table.Thead>
 
-                    {/* 只在有数据时渲染 Table.Tbody */}
-                    {filteredAndSortedSongs.length > 0 && (
-                        <Table.Tbody>{rows}</Table.Tbody>
+                        {filteredAndSortedSongs.length > 0 && (
+                            <Table.Tbody>{rows}</Table.Tbody>
+                        )}
+                    </Table>
+                    {filteredAndSortedSongs.length === 0 && (
+                        <Text ta="center" c="dimmed" py="xl" style={{ borderTop: '1px solid var(--mantine-color-gray-2)' }}>
+                            条件に合う曲は見つかりませんでした。
+                        </Text>
                     )}
-                </Table>
-                {/* 如果没有找到歌曲，在表格下方显示提示 */}
-                {filteredAndSortedSongs.length === 0 && (
-                    <Text ta="center" c="dimmed" py="xl" style={{ borderTop: '1px solid var(--mantine-color-gray-2)' }}>
-                        条件に合う曲は見つかりませんでした。
-                    </Text>
-                )}
+                </Box>
+
             </ScrollArea>
 
-            {/* 只有在有歌曲时才显示分页和记录计数 */}
             {filteredAndSortedSongs.length > 0 && (
                 <Flex justify="space-between" align="center" mt="md" wrap="wrap">
                     <Text size="sm" c="dimmed">

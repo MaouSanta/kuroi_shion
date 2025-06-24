@@ -25,7 +25,14 @@ export default function RootLayout({
         <MantineProvider>
           <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             {/* Main content area */}
-            <main style={{ flexGrow: 1, display: 'flex', flexDirection: 'column', padding: '1rem' }}>
+            <main style={{
+              flexGrow: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              padding: '1rem', // 保持内边距
+              // overflowX: 'auto', // **允许 main 自身水平滚动**
+              // minWidth: 0, // 关键：在 flex 容器中，允许子元素收缩到0或超出
+            }}>
               {children}
             </main>
 
