@@ -237,7 +237,7 @@ export function SongListInteractive({ clientSongs, allAvailableTags }: SongListI
                         黒井獅音 歌枠セットリスト記録
                     </Title>
                     <Text ta="left" size="lg" mb="xl" c="dimmed">
-                        獅音くんが歌枠配信で歌った曲・まだ歌っていない曲を記録しています。（2025年6月6日までの配信を収録済み）
+                        獅音くんが歌枠配信で歌った曲・まだ歌っていない曲を記録しています。（2025年7月10日までの配信を収録済み）
                     </Text>
                     <Text ta="left" size="xm" mb="xm" c="dimmed">「曲名」「アーティスト」「該当配信」「回数」をクリックすると、それぞれの項目で並び替えができます。</Text>
                 </Box>

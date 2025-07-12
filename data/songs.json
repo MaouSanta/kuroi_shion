@@ -1,5 +1,160 @@
 [
     {
+        "id": "201",
+        "songName": "奇縁ロマンス",
+        "artist": "ナナヲアカリ",
+        "lyrics": "運命の赤い糸 僕と希望 繋がっていよう どうしたって好きなんだ あるがままの世界が",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=6233s"
+            }
+        ]
+    },
+    {
+        "id": "200",
+        "songName": "よっしゃあ漢唄",
+        "artist": "角田信朗",
+        "lyrics": "そーれ それそれ そーれそ![斬!] そーれ それそれ",
+        "notes": [
+            "未歌唱",
+            "曲知らない",
+            "後で探す"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=6164s"
+            }
+        ]
+    },
+    {
+        "id": "199",
+        "songName": "さくらんぼ",
+        "artist": "大塚愛",
+        "lyrics": "手帳開くと もう２年たつなあって やっぱ実感するね なんだか照れたりするね そういや",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=4776s"
+            }
+        ]
+    },
+    {
+        "id": "198",
+        "songName": "アイドル",
+        "artist": "YOASOBI",
+        "lyrics": "無敵の笑顔で荒らすメディア 知りたいその秘密ミステリアス 抜けてるとこさえ彼女のエリア 完璧で嘘つきな君は 天才的なアイドル様",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=2663s"
+            }
+        ]
+    },
+    {
+        "id": "197",
+        "songName": "コネクト",
+        "artist": "ClariS(クラリス)",
+        "lyrics": "交わした約束忘れないよ 目を閉じ確かめる 押し寄せた闇 振り払って進むよ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=2526s"
+            }
+        ]
+    },
+    {
+        "id": "196",
+        "songName": "天使と悪魔",
+        "artist": "SEKAI NO OWARI",
+        "lyrics": "「いじめは正義だから 悪をこらしめているんだぞ」 そんな風に子供に教えたのは 僕らなんだよ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=2067s"
+            }
+        ]
+    },
+    {
+        "id": "195",
+        "songName": "RAIN",
+        "artist": "SEKAI NO OWARI",
+        "lyrics": "魔法は いつか解けると 僕らは知ってる 月が咲いて太陽が今枯れた",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=1940s"
+            }
+        ]
+    },
+    {
+        "id": "194",
+        "songName": "忘れじの言の葉",
+        "artist": "安次嶺希和子",
+        "lyrics": "言の葉を紡いで微睡んだ泡沫 旅人迷い込む御伽の深い霧 差し伸べた掌そっと触れる予感 受け止めて零れた光の一滴 面影虚ろって微笑んだ幻",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=1038s"
+            }
+        ]
+    },
+    {
+        "id": "193",
+        "songName": "君をのせて",
+        "artist": "井上あずみ",
+        "lyrics": "あの地平線 輝くのは どこかに君をかくしているから たくさんの灯が なつかしいのは",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=722s"
+            }
+        ]
+    },
+    {
+        "id": "192",
+        "songName": "やさしさに包まれたなら",
+        "artist": "松任谷由実",
+        "lyrics": "小さい頃は神さまがいて 不思議に夢をかなえてくれた やさしい気持で目覚めた朝は おとなになっても 奇蹟はおこるよ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=315s"
+            }
+        ]
+    },
+    {
         "id": "191",
         "songName": "Tomorrow",
         "artist": "岡本真夜",
@@ -1211,6 +1366,10 @@
             {
                 "date": "2025-04-15",
                 "youtubeLink": "https://www.youtube.com/watch?v=U8Y4bCG3y08&t=4116s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=1550s"
             }
         ]
     },
@@ -2025,6 +2184,10 @@
             {
                 "date": "2025-03-29",
                 "youtubeLink": "https://www.youtube.com/watch?v=3BZ7aNeLjiQ&t=3401s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=3627s"
             }
         ]
     },
@@ -2452,6 +2615,10 @@
             {
                 "date": "2024-11-12",
                 "youtubeLink": "https://www.youtube.com/watch?v=3AddtbQ5hUE&t=1074s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=6790s"
             }
         ]
     },
@@ -2569,6 +2736,10 @@
             {
                 "date": "2024-09-21",
                 "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=3391s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=7217s"
             }
         ]
     },
@@ -2618,6 +2789,10 @@
             {
                 "date": "2024-09-21",
                 "youtubeLink": "https://www.youtube.com/watch?v=c97AFpuj2hY&t=1935s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=5776s"
             }
         ]
     },
@@ -2768,6 +2943,10 @@
             {
                 "date": "2025-04-26",
                 "youtubeLink": "https://www.youtube.com/watch?v=823zbzKSR-s&t=1731s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=3958s"
             }
         ]
     },
@@ -2924,23 +3103,22 @@
     {
         "id": "15",
         "songName": "吉原ラメント",
-        "artist": "重音テト​",
+        "artist": "重音テト/亜沙​",
         "lyrics": "江戸の町は 今日も深く 夜の帳 かけて行く 鏡向いて",
         "notes": [
-            "未歌唱",
-            "自信ない"
+            "歌唱済み"
         ],
         "performances": [
             {
-                "date": "2024-05-10",
-                "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=1449s"
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=5276s"
             }
         ]
     },
     {
         "id": "14",
         "songName": "ライオン",
-        "artist": "ランカ・リー=中島愛",
+        "artist": "ランカ・リー=中島愛/May'n",
         "lyrics": "星を廻せ 世界のまんなかで くしゃみすればどこかの森で蝶が乱舞 君が守るドアのかぎ デタラメ",
         "notes": [
             "歌唱済み"
@@ -2949,6 +3127,10 @@
             {
                 "date": "2024-05-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=UAkgWeywSWs&t=1432s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=4338s"
             }
         ]
     },
@@ -3109,6 +3291,10 @@
             {
                 "date": "2025-05-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=3661s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=3093s"
             }
         ]
     },
@@ -3170,6 +3356,10 @@
             {
                 "date": "2025-05-22",
                 "youtubeLink": "https://www.youtube.com/watch?v=MeBBsfoGnEI&t=1319s"
+            },
+            {
+                "date": "2025-07-10",
+                "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=6341s"
             }
         ]
     },
