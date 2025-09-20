@@ -1,6 +1,6 @@
 [
     {
-        "id": "224",
+        "id": "223",
         "songName": "ガジュマル ～Heaven in the Rain～",
         "artist": "ReoNa",
         "lyrics": "心残りが あるとしたなら 言えなかった 「さよなら」でしょうか 後悔ばかり",
@@ -15,7 +15,7 @@
         ]
     },
     {
-        "id": "223",
+        "id": "222",
         "songName": "ひだまりの詩",
         "artist": "Le Couple",
         "lyrics": "逢えなくなって どれくらいたつのでしょう 出した手紙も 今朝ポストに舞い戻った 窓辺に揺れる",
@@ -31,7 +31,7 @@
         ]
     },
     {
-        "id": "222",
+        "id": "221",
         "songName": "シルエット",
         "artist": "KANA-BOON",
         "lyrics": "いっせーのーせで踏み込むゴーライン 僕らは何も何もまだ知らぬ 一線超えて振り返るともうない 僕らは何も何もまだ知らぬ",
@@ -47,7 +47,7 @@
         ]
     },
     {
-        "id": "221",
+        "id": "220",
         "songName": "おどロボ",
         "artist": "海茶 feat. 琴葉茜,琴葉葵,ずんだもん",
         "lyrics": "町を よるが包むとき 出店並ぶこの道で 夜空の住み人たちの 宴が始まる",
@@ -63,7 +63,7 @@
         ]
     },
     {
-        "id": "220",
+        "id": "219",
         "songName": "天体観測",
         "artist": "BUMP OF CHICKEN",
         "lyrics": "午前二時 フミキリに 望遠鏡を担いでった ベルトに結んだラジオ 雨は降らないらしい",
@@ -78,7 +78,7 @@
         ]
     },
     {
-        "id": "219",
+        "id": "218",
         "songName": "ツバサ",
         "artist": "アンダーグラフ",
         "lyrics": "明け方過ぎの国道までの細い抜け道 君が呟く 「恐いものなど何も無いよ」と見送る為の言葉に涙流れた つまらぬ事で話は絶えず 散らかる部屋で笑いあえてた",
@@ -93,7 +93,7 @@
         ]
     },
     {
-        "id": "218",
+        "id": "217",
         "songName": "女々しくて",
         "artist": "ゴールデンボンバー",
         "lyrics": "女々しくて女々しくて 女々しくて辛いよ 僕の事をからかったの? あんなに好きと言ったのに",
@@ -104,22 +104,6 @@
             {
                 "date": "2025-09-20",
                 "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=3106s"
-            }
-        ]
-    },
-    {
-        "id": "217",
-        "songName": "イケナイ太陽",
-        "artist": "ORANGE RANGE",
-        "lyrics": "イケナイ太陽 Na Na チョットでいいから",
-        "notes": [
-            "未歌唱",
-            "曲知らない"
-        ],
-        "performances": [
-            {
-                "date": "2025-09-20",
-                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2639s"
             }
         ]
     },
@@ -769,6 +753,10 @@
             {
                 "date": "2025-06-06",
                 "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=4978s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2639s"
             }
         ]
     },
