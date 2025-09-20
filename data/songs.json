@@ -1,5 +1,365 @@
 [
     {
+        "id": "224",
+        "songName": "ガジュマル ～Heaven in the Rain～",
+        "artist": "ReoNa",
+        "lyrics": "心残りが あるとしたなら 言えなかった 「さよなら」でしょうか 後悔ばかり",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=5179s"
+            }
+        ]
+    },
+    {
+        "id": "223",
+        "songName": "ひだまりの詩",
+        "artist": "Le Couple",
+        "lyrics": "逢えなくなって どれくらいたつのでしょう 出した手紙も 今朝ポストに舞い戻った 窓辺に揺れる",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=4092s"
+            }
+        ]
+    },
+    {
+        "id": "222",
+        "songName": "シルエット",
+        "artist": "KANA-BOON",
+        "lyrics": "いっせーのーせで踏み込むゴーライン 僕らは何も何もまだ知らぬ 一線超えて振り返るともうない 僕らは何も何もまだ知らぬ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=4032s"
+            }
+        ]
+    },
+    {
+        "id": "221",
+        "songName": "おどロボ",
+        "artist": "海茶 feat. 琴葉茜,琴葉葵,ずんだもん",
+        "lyrics": "町を よるが包むとき 出店並ぶこの道で 夜空の住み人たちの 宴が始まる",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=3993s"
+            }
+        ]
+    },
+    {
+        "id": "220",
+        "songName": "天体観測",
+        "artist": "BUMP OF CHICKEN",
+        "lyrics": "午前二時 フミキリに 望遠鏡を担いでった ベルトに結んだラジオ 雨は降らないらしい",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=4082s"
+            }
+        ]
+    },
+    {
+        "id": "219",
+        "songName": "ツバサ",
+        "artist": "アンダーグラフ",
+        "lyrics": "明け方過ぎの国道までの細い抜け道 君が呟く 「恐いものなど何も無いよ」と見送る為の言葉に涙流れた つまらぬ事で話は絶えず 散らかる部屋で笑いあえてた",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=3659s"
+            }
+        ]
+    },
+    {
+        "id": "218",
+        "songName": "女々しくて",
+        "artist": "ゴールデンボンバー",
+        "lyrics": "女々しくて女々しくて 女々しくて辛いよ 僕の事をからかったの? あんなに好きと言ったのに",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=3106s"
+            }
+        ]
+    },
+    {
+        "id": "217",
+        "songName": "イケナイ太陽",
+        "artist": "ORANGE RANGE",
+        "lyrics": "イケナイ太陽 Na Na チョットでいいから",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2639s"
+            }
+        ]
+    },
+    {
+        "id": "216",
+        "songName": "unravel(アンラベル)",
+        "artist": "TK from 凛として時雨",
+        "lyrics": "教えて 教えてよ その仕組みを 僕の中に誰がいるの? 壊れた",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2634s"
+            }
+        ]
+    },
+    {
+        "id": "215",
+        "songName": "INTERNET YAMERO feat. KOTOKO",
+        "artist": "Aiobahn",
+        "lyrics": "インターネット・エンジェルという 現象は 仮定された有機交流電燈の かわいい虹色の照明です ぶいっ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2613s"
+            }
+        ]
+    },
+    {
+        "id": "214",
+        "songName": "審美眼",
+        "artist": "和ぬか",
+        "lyrics": "別れの段取り 距離を取るメソッドに 優しさ選んだあんたに とって愛なんてファンタジー",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2604s"
+            }
+        ]
+    },
+    {
+        "id": "213",
+        "songName": "水平線",
+        "artist": "",
+        "lyrics": "",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2576s"
+            }
+        ]
+    },
+    {
+        "id": "212",
+        "songName": "センチメンタル・ジャーニー",
+        "artist": "松本伊代",
+        "lyrics": "読み捨てられる 雑誌のように 私のページが めくれるたびに 放り出されて",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2539s"
+            }
+        ]
+    },
+    {
+        "id": "211",
+        "songName": "心做し",
+        "artist": "蝶々P feat. GUMI",
+        "lyrics": "ねぇ、もしも全て投げ捨てられたら 笑って生きることが楽になるの? また胸が痛くなるから もう何も言わないでよ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2529s"
+            }
+        ]
+    },
+    {
+        "id": "210",
+        "songName": "サカサカバンバンバスピスピス",
+        "artist": "やかもち feat. 琴葉姉妹",
+        "lyrics": "サカサカバンバンバスピスピス サカサカサカバンバンバスピスピス サカサカバンバンバスピスピス サカサカサカバンバンバンバンバスピス",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2159s"
+            }
+        ]
+    },
+    {
+        "id": "209",
+        "songName": "もののけ姫",
+        "artist": "米良美一",
+        "lyrics": "はりつめた弓の ふるえる弦よ 月の光に ざわめく おまえの心",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2161s"
+            }
+        ]
+    },
+    {
+        "id": "208",
+        "songName": "みむかゥわナイストライ",
+        "artist": "ぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬぬ feat. 初音ミク",
+        "lyrics": "UN◯♡。 おやぁ?、 手札多過ぎクッソワロタw 次のターンで私が勝ちまちゅね♡。",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2059s"
+            }
+        ]
+    },
+    {
+        "id": "207",
+        "songName": "晩餐歌",
+        "artist": "tuki.",
+        "lyrics": "君を泣かすから だから一緒には居れないな 君を泣かすから 早く忘れて欲しいんだ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2042s"
+            }
+        ]
+    },
+    {
+        "id": "206",
+        "songName": "愛をこめて花束を",
+        "artist": "Superfly",
+        "lyrics": "二人で写真を撮ろう 懐かしいこの景色と あの日と同じポーズで おどけてみせて欲しい",
+        "notes": [
+            "未歌唱",
+            "歌詞知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=1966s"
+            }
+        ]
+    },
+    {
+        "id": "205",
+        "songName": "ヤナト田植唄・巫",
+        "artist": "朝倉さや",
+        "lyrics": "植えよ根付けよ 根付きの悪さぁヨー 心根弱さヨー 泥に足沈め",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=1561s"
+            }
+        ]
+    },
+    {
+        "id": "204",
+        "songName": "ツキミソウ",
+        "artist": "Novelbright",
+        "lyrics": "出会いと別れ繰り返す度 心をすり減らす 記憶をかき分けた先に 滲んだ思い出が待つ",
+        "notes": [
+            "未歌唱",
+            "曲知らない"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=1446s"
+            }
+        ]
+    },
+    {
+        "id": "203",
+        "songName": "怪獣の花唄",
+        "artist": "Vaundy",
+        "lyrics": "思い出すのは君の歌 会話よりも鮮明だ どこに行ってしまったの いつも探すんだよ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=1089s"
+            }
+        ]
+    },
+    {
+        "id": "202",
+        "songName": "糸",
+        "artist": "中島みゆき",
+        "lyrics": "なぜ めぐり逢うのかを 私たちは なにも知らない いつ",
+        "notes": [
+            "歌唱済み"
+        ],
+        "performances": [
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=370s"
+            }
+        ]
+    },
+    {
         "id": "201",
         "songName": "奇縁ロマンス",
         "artist": "ナナヲアカリ",
@@ -1299,6 +1659,10 @@
             {
                 "date": "2025-06-06",
                 "youtubeLink": "https://www.youtube.com/watch?v=YhlQTiDtkpo&t=3520s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=4440s"
             }
         ]
     },
@@ -1639,6 +2003,10 @@
             {
                 "date": "2025-02-20",
                 "youtubeLink": "https://www.youtube.com/watch?v=8sQgf0k6sfM&t=1721s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2042s"
             }
         ]
     },
@@ -1734,6 +2102,10 @@
             {
                 "date": "2025-02-20",
                 "youtubeLink": "https://www.youtube.com/watch?v=8sQgf0k6sfM&t=1214s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=4087s"
             }
         ]
     },
@@ -1779,6 +2151,10 @@
             {
                 "date": "2025-01-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=RX9uKWTTWG8&t=3502s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=4821s"
             }
         ]
     },
@@ -3249,6 +3625,10 @@
             {
                 "date": "2025-01-18",
                 "youtubeLink": "https://www.youtube.com/watch?v=RX9uKWTTWG8&t=261s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=804s"
             }
         ]
     },
@@ -3295,6 +3675,10 @@
             {
                 "date": "2025-07-10",
                 "youtubeLink": "https://www.youtube.com/watch?v=66aziS_1Wos&t=3093s"
+            },
+            {
+                "date": "2025-09-20",
+                "youtubeLink": "https://www.youtube.com/watch?v=-JuGUlvB-yc&t=2735s"
             }
         ]
     },
